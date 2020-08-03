@@ -1,0 +1,14 @@
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://rawg-video-games-database.p.rapidapi.com/games/%7Bgame_pk%7D",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
+		"x-rapidapi-key": "459bb2a183mshc0681ca6ce8d05cp17f108jsnec2b6aceda17"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
