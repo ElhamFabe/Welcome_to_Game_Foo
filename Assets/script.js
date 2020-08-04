@@ -8,6 +8,10 @@ $(document).ready(function () {
 
         var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/" + dashedGame;
 
+ <<<<<<< elfabe
+        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/the-last-of-us"
+=======
+ >>>>>>> master
         var settings = {
             "async": true,
             "crossDomain": true,
