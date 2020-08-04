@@ -16,5 +16,36 @@ $.ajax(settings).done(function (response) {
 	console.log(response);
 });
 
+API Key for Game Information
 
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://chicken-coop.p.rapidapi.com/games/%7Btitle%7D?platform=pc",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "chicken-coop.p.rapidapi.com",
+		"x-rapidapi-key": "1259f80affmshb697070bafa09b2p1b961ejsn003ae6a09489"
+	}
+}
 
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+API Key for Search Game
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://chicken-coop.p.rapidapi.com/games?title=tomb%20raider",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "chicken-coop.p.rapidapi.com",
+		"x-rapidapi-key": "1259f80affmshb697070bafa09b2p1b961ejsn003ae6a09489"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
