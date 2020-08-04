@@ -22,44 +22,55 @@ $(document).ready(function () {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
-            var nameEL = response.name;
-            var ratingEl = response.esrb_rating.name;
+            if(response.name != null){
+                var nameEL = response.name;
+                console.log(nameEL);
+            }
+
+            if(response.esrb_rating.name != null){
+                var ratingEl = response.esrb_rating.name;
+                console.log(ratingEl);
+            }
+
             var descriptionEl = response.description_raw;   
+            console.log(descriptionEl);
+            
             var imgEl = response.background_image;
+            console.log(imgEl);
+            
             var genreEl = [];
             for(var i = 0; i < response.genres.length; i++){
                 genreEl[i] = response.genres[i].name;
                 console.log(genreEl[i]);
             }
+            
             var metacriticEl = response.metacritic;
+            console.log(metacriticEl);
+            
             var developerEl = []; 
             for(var i = 0; i < response.developers.length; i++){    
                 developerEl[i] = response.developers[i].name;
                 console.log(developerEl[i]);
             }
+            
             var publisherEl = [];
             for(var i = 0; i < response.publishers.length; i++){ 
                 publisherEl[i] = response.publishers[i].name;
                 console.log(publisherEl[i]);
             }
+            
             var releaseEl = response.released;
-            var websiteEl = response.website;
-            var platformEl = response.platforms[0].platform.name;
-
-            console.log(nameEL);
-            console.log(ratingEl);
-            console.log(descriptionEl);
-            console.log(imgEl);
-            console.log(genreEl);
-            console.log(metacriticEl);
-            console.log(developerEl);
-            console.log(publisherEl);
             console.log(releaseEl);
+            
+            var websiteEl = response.website;
             console.log(websiteEl);
+            
+            var platformEl = response.platforms[0].platform.name;
             console.log(platformEl);
         });
     });
 });
+
 //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
