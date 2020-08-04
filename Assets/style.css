@@ -36,8 +36,15 @@
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
  }
+ /* animation modal */
+.reveal,
+.lead-modal {
+   color: #f1f1f1;
+   text-align: center;
 
+}
 
+/* background space animation */
 .large-header{
    position: scroll;
    width: 100%;
