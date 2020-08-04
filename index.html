@@ -13,37 +13,45 @@
 </head>
 
 <body>
+  <!-- nav -->
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a href="#">New Releases</a>
+    <a href="#">Platform</a>
+    <a href="#">Games</a>
+    <a href="#">Store</a>
+  </div>
   <div class="container demo">
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo</h1>
         <div class="row">
-        <form id="game-form">
-          <label for="game-input">Search for a game</label>
-          <input type="text" id="game-input"><br>
+          <form id="game-form">
+            <label for="game-input">Search for a game</label>
+            <input type="text" id="game-input"><br>
 
-          <!-- This button will trigger our AJAX call -->
-          <input id="find-game" type="submit" value="Game Search">
-        </form>
-        
-        <div id="game-view"></div>
+            <!-- This button will trigger our AJAX call -->
+            <input id="find-game" type="submit" value="Game Search">
+          </form>
+
+          <div id="game-view"></div>
+        </div>
+
+
+
       </div>
-
-
-
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
-  <script src="Assets/animation.js"></script>
-  <script src="Assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <script src="Assets/animation.js"></script>
+    <script src="Assets/script.js"></script>
 </body>
 
 </html>

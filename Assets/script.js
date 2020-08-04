@@ -3,7 +3,7 @@ $(document).ready(function () {
         event.preventDefault();
 
         var game = $("game-input").val ();
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/%7Bgame_pk%7D"
+        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/"
         var settings = {
             "async": true,
             "crossDomain": true,
