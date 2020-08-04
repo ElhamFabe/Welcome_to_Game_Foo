@@ -2,12 +2,11 @@ $(document).ready(function () {
     $("#find-game").on("click", function (event) {
         event.preventDefault();
 
-        var game = $("game-input").val ();
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games"
+        var game = $("#game-input").val();
+        var dashedGame = game.replace(/ /g, "-");
+        console.log(dashedGame);
 
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/"
-
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/the-last-of-us"
+        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/" + dashedGame;
 
         var settings = {
             "async": true,
