@@ -22,6 +22,31 @@ $(document).ready(function () {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            var nameEL = response.name;
+            var ratingEl = response.esrb_rating.name;
+            var descriptionEl = response.description_raw;   
+            var imgEl = response.background_image;
+            var clipEl = response.clip.clip;
+            var genreEl = response.genres[0].name;
+            var metacriticEl = response.metacritic;
+            var developerEl = response.developers[0].name;
+            var publisherEl = response.publishers[0].name;
+            var releaseEl = response.released;
+            var websiteEl = response.website;
+            var platformEl = response.platforms[0].platform.name;
+
+            console.log(nameEL);
+            console.log(ratingEl);
+            console.log(descriptionEl);
+            console.log(imgEl);
+            console.log(clipEl);
+            console.log(genreEl);
+            console.log(metacriticEl);
+            console.log(developerEl);
+            console.log(publisherEl);
+            console.log(releaseEl);
+            console.log(websiteEl);
+            console.log(platformEl);
         });
     });
 });
