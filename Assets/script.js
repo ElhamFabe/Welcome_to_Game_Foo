@@ -3,11 +3,7 @@ $(document).ready(function () {
         // event.preventDefault();
 
         var game = $("game-input").val ();
-<<<<<<< HEAD
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games"
-=======
         var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/"
->>>>>>> master
         var settings = {
             "async": true,
             "crossDomain": true,
