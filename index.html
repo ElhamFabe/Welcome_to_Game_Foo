@@ -22,27 +22,46 @@
     <a href="#">Developer</a>
     <a href="#">Store</a>
   </div>
+  <!-- <main container  -->
   <div class="container demo">
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo</h1>
+
+        <!-- Row for game search  -->
         <div class="row">
-          <form id="game-form">
-            <label for="game-input">Search for a game</label>
-            <input type="text" id="game-input"><br>
+          <div class="col-md-8">
+            <form id="game-form">
+              <label for="game-input">Search for a game</label>
+              <input type="text" id="game-input"><br>
 
-            <!-- This button will trigger our AJAX call -->
-            <input id="find-game" type="submit" value="Game Search">
-          </form>
+              <!-- This button will trigger our AJAX call -->
+              <input id="find-game" type="submit" value="Game Search">
+            </form>
 
-          <div id="game-view"></div>
+            <div id="game-view"></div>
+          </div>
+
+
         </div>
 
+        <!-- Footer -->
+        <footer class="row">
+          <div class="col-sm-12">
+            <hr>
+            <h2 class="text-center dev">
+              Powered by your favorite Game-Foo dev's 
+              <i class=" fa fa-bolt">
+                </i>
+            </h2>
+          </div>
+        </footer>
 
 
       </div>
     </div>
+    <!--  -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
