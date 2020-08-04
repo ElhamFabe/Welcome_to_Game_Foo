@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         var game = $("game-input").val ();
 
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/overwatch"
+        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/the-last-of-us"
         var settings = {
             "async": true,
             "crossDomain": true,
