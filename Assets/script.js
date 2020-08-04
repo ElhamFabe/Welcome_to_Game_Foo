@@ -1,9 +1,10 @@
 $(document).ready(function () {
-    // $("#find-game").on("click", function (event) {
-        // event.preventDefault();
+    $("#find-game").on("click", function (event) {
+        event.preventDefault();
 
         var game = $("game-input").val ();
-        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/"
+
+        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games/overwatch"
         var settings = {
             "async": true,
             "crossDomain": true,
@@ -19,5 +20,5 @@ $(document).ready(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
         });
-    // });
+    });
 });
