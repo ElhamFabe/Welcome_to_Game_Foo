@@ -26,11 +26,22 @@ $(document).ready(function () {
             var ratingEl = response.esrb_rating.name;
             var descriptionEl = response.description_raw;   
             var imgEl = response.background_image;
-            var clipEl = response.clip.clip;
-            var genreEl = response.genres[0].name;
+            var genreEl = [];
+            for(var i = 0; i < response.genres.length; i++){
+                genreEl[i] = response.genres[i].name;
+                console.log(genreEl[i]);
+            }
             var metacriticEl = response.metacritic;
-            var developerEl = response.developers[0].name;
-            var publisherEl = response.publishers[0].name;
+            var developerEl = []; 
+            for(var i = 0; i < response.developers.length; i++){    
+                developerEl[i] = response.developers[i].name;
+                console.log(developerEl[i]);
+            }
+            var publisherEl = [];
+            for(var i = 0; i < response.publishers.length; i++){ 
+                publisherEl[i] = response.publishers[i].name;
+                console.log(publisherEl[i]);
+            }
             var releaseEl = response.released;
             var websiteEl = response.website;
             var platformEl = response.platforms[0].platform.name;
@@ -39,7 +50,6 @@ $(document).ready(function () {
             console.log(ratingEl);
             console.log(descriptionEl);
             console.log(imgEl);
-            console.log(clipEl);
             console.log(genreEl);
             console.log(metacriticEl);
             console.log(developerEl);
