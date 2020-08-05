@@ -112,7 +112,7 @@ $(document).ready(function () {
 
     $("#clear-search").on("click", function (event) {
         $("#game-section").empty();
-        document.getElementById("game-input").value = '';
+        document.getElementById("game-input,").value = '';
     });
 });
 
