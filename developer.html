@@ -76,6 +76,162 @@
                 <h1 class="main-title"><span class="thin"></span> Developers </h1>
                 <!-- header for developers -->
 
+                <div class="row rowGame">
+                    <div class="col-md-12">
+
+                            <!-- Card group -->
+                            <div class="card-group offset-2">
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-0">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-0">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+                                
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-1">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-1">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-2">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-2">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-3">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-3">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-4">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-4">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-6">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-6">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-7">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-7">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-8">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-8">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-4">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay" id="card-overlay-9">
+                                        
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body" id="card-9">
+                                    </div>
+                                    <!-- Card content -->
+
+                                </div>
+                                <!-- Card -->
+
+
+                            </div>
+                            <!-- Card group -->
+                        <!-- </div> -->
+                    </div>
+                </div>
 
 
                 <!-- Footer -->
@@ -111,6 +267,30 @@
     <script src="Assets/animation.js"></script>
     <!-- javascript -->
     <script src="Assets/script.js"></script>
+    <script type="text/javascript">
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://rawg-video-games-database.p.rapidapi.com/developers",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
+                "x-rapidapi-key": "5d6328f6abmshc6d3103a2851855p1785e8jsneac939d8c1f9"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            for(var i = 0; i < response.results.length; i++){
+                if(i === 5){}
+                else{
+                    var nameEl = response.results[i].name;
+                    var titleP = $("<p>").text(nameEl);
+                    $("#card-" + i).append(titleP);
+                }   
+            }
+        });
+    </script>
 </body>
 
 </html>
