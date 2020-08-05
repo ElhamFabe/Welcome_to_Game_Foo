@@ -287,7 +287,15 @@
                     var nameEl = response.results[i].name;
                     var titleP = $("<p>").text(nameEl);
                     $("#card-" + i).append(titleP);
-                }   
+                    var devGameList = $("<ul>").text("Games by this developer:");
+                    $("#card-" + i).append(devGameList);
+                    for(var j = 0; j < response.results[i].games.length; j++){
+                        var gameEl = response.results[i].games[j].name;
+                        var listEl = $("<li>").text(gameEl);
+                        devGameList.append(listEl);
+                    }
+
+                }
             }
         });
     </script>
