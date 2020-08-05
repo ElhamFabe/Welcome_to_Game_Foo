@@ -1,4 +1,4 @@
-var youtubeKey = "[AIzaSyD0-zt1iIE2Jrk3fEwN9jCgBEvdZckoK4I]"
+var youtubeKey = "AIzaSyAEWwI1KJUdawIp7HNTPXVgMZAERaYxNxA"
 var urlYoutube = "https://www.googleapis.com/youtube/v3/search?part=id&q=tuto&type=video&key=" + youtubeKey
 // Request Function
 function getVideo(searchInfo) {
@@ -36,7 +36,7 @@ function embedVideo(data) {
     $('.description3').text(data.items[2].snippet.description)
 }
 // Call the function to search
-$(".searchBtn").on("click", function() {
+$("#search").on("click", function() {
     var textBox = $("#game-Input").val()
     getVideo(textBox);
     console.log(textBox)
