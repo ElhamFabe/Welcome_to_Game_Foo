@@ -50,7 +50,7 @@
 .large-header{
    position: relative;
    width: 100%;
-   height: 300%;
+   height: 100%;
    background: #111;
    overflow: scroll;
    background-size: cover;
@@ -92,9 +92,11 @@
 }
 /* end of background animation */
 /* search card */
-.search {
+.search,
+#game-section {
    text-align: center;
 }
+
 /* footer */
 .dev {
    color: #f1f1f1;

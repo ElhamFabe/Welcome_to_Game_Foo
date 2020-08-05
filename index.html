@@ -21,32 +21,49 @@
 <body>
   <!-- nav -->
   <!-- Side navigation -->
-  <div class="sidenav">
-    <a href="#">New Releases</a>
+  <nav class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="newReleases.html">New Releases</a>
     <button class="dropdown-btn">Platforms
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top" alt="">Xbox</a>
-      <a href="#"><img src="Assets/images/ps4.png" width="30" height="30" class="d-inline-block align-top" alt="">Playstation</a>
-      <a href="#"><img src="Assets/images/nintendo.png" width="30" height="30" class="d-inline-block align-top" alt="">Nintendo</a>
-      <a href="#"><img src="Assets/images/pc.png" width="30" height="30" class="d-inline-block align-top" alt="">PC</a>
+      <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
+          alt="Xbox Icon">Xbox</a>
+      <a href="#"><img src="Assets/images/ps4.png" width="30" height="30" class="d-inline-block align-top"
+          alt="Playstation Icon">Playstation</a>
+      <a href="#"><img src="Assets/images/nintendo.png" width="30" height="30" class="d-inline-block align-top"
+          alt="Nintendo Icon">Nintendo</a>
+      <a href="#"><img src="Assets/images/pc.png" width="30" height="30" class="d-inline-block align-top"
+          alt="PC Icon">PC</a>
     </div>
-    <a href="#">Games</a>
-    <a href="#">Developer</a>
-    <a href="#">Store</a>
+    <a href="games.html">Games</a>
+    <a href="developer.html">Developer</a>
+    <a href="store.html">Store</a>
     <div class="form-group">
-      <label for="game-input">Search Game:</label>
-      <input type="text" class="form-control" id="game-input">
-      </div>
-  </div>
+      <label for="game-search2">Search Game:</label>
+      <input type="text" class="form-control" id="game-search2">
+    </div>
+  </nav>
   <!-- <main container  -->
   <main class="container-fluid demo">
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
-        <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo</h1>
+        <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1>
+        <!-- Animated modal possibly for sign up's-->
+        <p><button class="button" data-toggle="animatedModal10">Sign Up</button></p>
 
+        <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in"
+          data-animation-out="fade-out">
+          <h1>Sign up for the latest news</h1>
+          <p class="lead-modal">There are many options for animating modals, check out the Motion UI library to see them
+            all</p>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- animated modal end -->
         <!-- searching for games -->
         <div class="row row1">
           <div class="col-md-6 offset-3">
@@ -58,6 +75,7 @@
               </div>
               <div class="cardbody search">
                 <!-- creating form for the user to search -->
+
                 <!-- number of records that the user wants to retrieve -->
 
                 <div class="form-group">
@@ -78,7 +96,6 @@
                   <i class="fas fa-broom"></i>Start Over
                 </button>
 
-
               </div>
             </div>
           </div>
@@ -88,11 +105,10 @@
           <div class="col-md-6 offset-3">
             <div class="card">
               <div class="card-header">
-               <i class="fas fa-search-dollar"></i> <strong> Looky Here</strong> 
+                <i class="fas fa-search-dollar"></i> <strong> Looky Here</strong>
               </div>
               <!-- All games will go here -->
               <div class="card-body" id="game-section">
-
               </div>
             </div>
           </div>
@@ -123,6 +139,9 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+  <!-- foundation by Zurb -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
   <!-- script for local background animation js -->
   <script src="Assets/animation.js"></script>
   <!-- javascript -->

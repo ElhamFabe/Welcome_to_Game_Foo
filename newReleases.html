@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Game Foo" content="Gaming Database" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- awesome fonts  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- foundation by zurb -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <!--local CSS script  -->
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Game App</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <!-- Side navigation -->
+    <nav class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="newReleases.html">New Releases</a>
+        <button class="dropdown-btn">Platforms
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="Xbox Icon">Xbox</a>
+            <a href="#"><img src="Assets/images/ps4.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="Playstation Icon">Playstation</a>
+            <a href="#"><img src="Assets/images/nintendo.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="Nintendo Icon">Nintendo</a>
+            <a href="#"><img src="Assets/images/pc.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="PC Icon">PC</a>
+        </div>
+        <a href="games.html">Games</a>
+        <a href="developer.html">Developer</a>
+        <a href="store.html">Store</a>
+        <div class="form-group">
+            <label for="game-search2">Search Game:</label>
+            <input type="text" class="form-control" id="game-search2">
+        </div>
+    </nav>
+    <!-- <main container  -->
+    <main class="container-fluid demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <!-- <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1> -->
+                <!-- card's for new releases by zurb-->
+                <div class="grid-y grid-margin-y">
+                    <!-- class newRel -->
+                    <div class="column medium-8 align-center">
+                        <div class="card offset-3 newRel" style="width: 400px;">
+                            <div class="responsive-embed widescreen">
+                                <div class="card-section">
+                                    <p text-align-center>JSON dump</p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc"
+                                        frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card offset-3 newRel" style="width: 400px;">
+                            <div class="card-divider">
+                                This is a header
+                            </div>
+                            <img src="assets/img/generic/rectangle-1.jpg">
+                            <div class="card-section">
+                                <h4>This is a card.</h4>
+                                <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                            </div>
+                        </div>
+                        <div class="card offset-3 newRel" style="width: 400px;">
+                            <div class="card-divider">
+                                This is a header
+                            </div>
+                            <img src="assets/img/generic/rectangle-1.jpg">
+                            <div class="card-section">
+                                <h4>This is a card.</h4>
+                                <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Footer -->
+                        <footer class="dev">
+                            <div class="col-sm-12">
+                                <hr>
+                                <h2 class="text-center dev">
+                                    Powered by your favorite Game-Foo dev's
+                                    <i class=" fa fa-bolt">
+                                    </i>
+                                </h2>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!--Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- ajax Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <!-- ajax bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- script for web awesome animation -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <!-- foundation by Zurb -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <!-- script for local background animation js -->
+    <script src="Assets/animation.js"></script>
+    <!-- javascript -->
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>
