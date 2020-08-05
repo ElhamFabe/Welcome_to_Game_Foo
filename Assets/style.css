@@ -34,13 +34,7 @@
  .sidenav a:hover {
    color: #f1f1f1;
  }
- /* button search nav & search card  */
- .btn-group button {
-   cursor: pointer; /* Pointer/hand icon */
-   float: left; /* Float the buttons side by side */
- }
- 
- 
+
  /* Style page content */
  .main {
    margin-left: 160px; /* Same as the width of the sidebar */
@@ -52,7 +46,11 @@
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
  }
-
+ /* button search nav & search card  */
+ .btn-group button {
+   cursor: pointer; /* Pointer/hand icon */
+   float: left; /* Float the buttons side by side */
+ }
 /* background space animation */
 .large-header{
    position: relative;
@@ -98,6 +96,7 @@
    }
 }
 /* end of background animation */
+
 /* search card */
 .search,
 #game-section {

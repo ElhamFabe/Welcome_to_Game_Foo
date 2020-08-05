@@ -23,8 +23,8 @@
     <br>
     <br>
     <!-- <a href="index.html">Home</a> -->
-    <a href="#"><img src="Assets/images/home.png" width="30" height="30" class="d-inline-block align-top"
-        alt="fire Icon"> Home</a>
+    <a href="index.html"><img src="Assets/images/home.png" width="30" height="30" class="d-inline-block align-top"
+        alt="house Icon"> Home</a>
     <a href="newReleases.html">New Releases</a>
     <!-- icons for new releases placehoders -->
     <a href="#"><img src="Assets/images/fire.png" width="30" height="30" class="d-inline-block align-top"
@@ -78,7 +78,7 @@
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1>
         <!-- searching for games -->
-        <div class="row row1">
+        <div class="row rowGAme">
           <div class="col-md-6 offset-3">
             <div class="card">
               <div class="card-header search">
@@ -91,9 +91,8 @@
                 <div class="form-group">
                   <label for="game-input">Game:</label>
                   <input type="text" class="form-control" id="game-input">
-                  <label for="pwd">Number of games to Retrieve:</label>
-
-                  <!-- optional game article retrieval -->
+                   <!-- optional game article retrieval -->
+                  <!-- <label for="pwd">Number of games to Retrieve:</label> -->              
                   <!-- <select id="game-count" class="custom-select" aria-labelledby="dropdownMenuButton">
                     <option selected value="1">1</option>
                     Setting the option for 5 as default
@@ -103,10 +102,10 @@
 
                 </div>
                 <button type="sumbit" class="btn btn-outline-warning" id="find-game">
-                  <i class="fas fa-glasses"></i>Search
+                  <strong><i class="fas fa-glasses"></i> Search</strong>
                 </button>
                 <button class="btn btn-outline-warning" id="clear-search">
-                  <i class="fas fa-broom"></i>Start Over
+                 <strong><i class="fas fa-broom"></i> Start Over </strong>
                 </button>
 
               </div>
@@ -114,7 +113,7 @@
           </div>
         </div>
         <!-- all retrieved games -->
-        <div class="row row2">
+        <div class="row rowGame">
           <div class="col-md-6 offset-3">
             <div class="card">
               <div class="card-header">
