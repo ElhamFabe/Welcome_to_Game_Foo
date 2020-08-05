@@ -41,11 +41,12 @@
 .large-header{
    position: relative;
    width: 100%;
-   height: 100%;
+   height: 300%;
    background: #111;
    overflow: scroll;
    background-size: cover;
    background-position: center center;
+   background-repeat: no-repeat;
    z-index: 0;
 }
 
@@ -81,7 +82,15 @@
    }
 }
 /* end of background animation */
-
+/* search card */
+.search {
+   
+}
+/* footer */
+.dev {
+   color: #f1f1f1;
+   font-size: 15px;
+}
  /* Fixed sidenav, full height */
 .sidenav {
    height: 100%;
@@ -137,11 +146,6 @@
   
   /* Optional: Style the caret down icon */
   .fa-caret-down {
-
-    float: right;
-    padding-right: 8px;
-
-   
 
    float: right;
    padding-right: 8px;
