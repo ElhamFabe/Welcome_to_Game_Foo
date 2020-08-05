@@ -23,50 +23,70 @@ $(document).ready(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
             if(response.name != null){
-                var nameEL = response.name;
-                console.log(nameEL);
+                var nameEl = response.name;
+                console.log(nameEl);
+                var titleH = $("<h1>").text("Name: " + nameEl);
+                $("#game-result").append(titleH);
             }
 
-            if(response.esrb_rating.name != null){
-                var ratingEl = response.esrb_rating.name;
+            if(response.esrb_rating != null){
+                var ratingEl = response.esrb_rating;
                 console.log(ratingEl);
             }
 
-            var descriptionEl = response.description_raw;   
-            console.log(descriptionEl);
-            
-            var imgEl = response.background_image;
-            console.log(imgEl);
-            
-            var genreEl = [];
-            for(var i = 0; i < response.genres.length; i++){
-                genreEl[i] = response.genres[i].name;
-                console.log(genreEl[i]);
+            if(response.description_raw != null){
+                var descriptionEl = response.description_raw;   
+                console.log(descriptionEl);
             }
             
-            var metacriticEl = response.metacritic;
-            console.log(metacriticEl);
+            if(response.background_image != null){
+                var imgEl = response.background_image;
+                console.log(imgEl);
+            }
             
-            var developerEl = []; 
-            for(var i = 0; i < response.developers.length; i++){    
-                developerEl[i] = response.developers[i].name;
-                console.log(developerEl[i]);
+            var genreEl = [];
+            if(response.genres != null){
+                for(var i = 0; i < response.genres.length; i++){
+                    genreEl[i] = response.genres[i].name;
+                    console.log(genreEl[i]);
+                }
+            }
+            
+            if(response.metacritic != null){
+                var metacriticEl = response.metacritic;
+                console.log(metacriticEl);
+            }
+            
+            var developerEl = [];
+            if(response.developers != null){ 
+                for(var i = 0; i < response.developers.length; i++){    
+                    developerEl[i] = response.developers[i].name;
+                    console.log(developerEl[i]);
+                }
             }
             
             var publisherEl = [];
-            for(var i = 0; i < response.publishers.length; i++){ 
-                publisherEl[i] = response.publishers[i].name;
-                console.log(publisherEl[i]);
+            if(response.publishers != null){
+                for(var i = 0; i < response.publishers.length; i++){ 
+                    publisherEl[i] = response.publishers[i].name;
+                    console.log(publisherEl[i]);
+                }
             }
             
-            var releaseEl = response.released;
-            console.log(releaseEl);
+            if(response.release != null){
+                var releaseEl = response.released;
+                console.log(releaseEl);
+            }
             
-            var websiteEl = response.website;
-            console.log(websiteEl);
+            if(response.website != null){
+                var websiteEl = response.website;
+                console.log(websiteEl);
+            }
             
-            var platformEl = response.platforms[0].platform.name;
-            console.log(platformEl);
+            if(response.platforms[0].platform.name != null){
+                var platformEl = response.platforms[0].platform.name;
+                console.log(platformEl);
+            }
         });
     });
 });
