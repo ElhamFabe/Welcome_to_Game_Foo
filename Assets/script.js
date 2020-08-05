@@ -21,6 +21,7 @@ $(document).ready(function () {
         }
 
         $.ajax(settings).done(function (response) {
+            $("#game-section").empty();
             console.log(response);
             if(response.name != null){
                 var nameEl = response.name;
