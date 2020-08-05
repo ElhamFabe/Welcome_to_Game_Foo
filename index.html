@@ -40,10 +40,19 @@
     <a href="games.html">Games</a>
     <a href="developer.html">Developer</a>
     <a href="store.html">Store</a>
-    <div class="form-group">
-      <label for="game-search2">Search Game:</label>
-      <input type="text" class="form-control" id="game-search2">
+
+    <!-- search bar needs Ajax call -->
+    <div class="form-group"> -->
+      <label for="game-input">Search Game:</label>
+      <input type="text" class="form-control" id="game-section">
     </div>
+    <button type="sumbit" class="btn btn-group btn-outline-warning" id="find-game">
+      <i class="fas fa-glasses"></i> Search
+    </button>
+    <button class="btn btn-group btn-outline-warning" id="clear-search">
+      <i class="fas fa-broom"></i> Clear
+    </button>
+
   </nav>
   <!-- <main container  -->
   <main class="container-fluid demo">
@@ -51,19 +60,6 @@
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1>
-        <!-- Animated modal possibly for sign up's-->
-        <p><button class="button" data-toggle="animatedModal10">Sign Up</button></p>
-
-        <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in"
-          data-animation-out="fade-out">
-          <h1>Sign up for the latest news</h1>
-          <p class="lead-modal">There are many options for animating modals, check out the Motion UI library to see them
-            all</p>
-          <button class="close-button" data-close aria-label="Close reveal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- animated modal end -->
         <!-- searching for games -->
         <div class="row row1">
           <div class="col-md-6 offset-3">
@@ -75,19 +71,19 @@
               </div>
               <div class="cardbody search">
                 <!-- creating form for the user to search -->
-
-                <!-- number of records that the user wants to retrieve -->
-
                 <div class="form-group">
                   <label for="game-input">Game:</label>
                   <input type="text" class="form-control" id="game-input">
                   <label for="pwd">Number of games to Retrieve:</label>
-                  <select id="game-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+
+                  <!-- optional game article retrieval -->
+                  <!-- <select id="game-count" class="custom-select" aria-labelledby="dropdownMenuButton">
                     <option selected value="1">1</option>
-                    <!-- Setting the option for 5 as default -->
+                    Setting the option for 5 as default
                     <option value="5" selected>5</option>
                     <option value="10">10</option>
-                  </select>
+                  </select> -->
+
                 </div>
                 <button type="sumbit" class="btn btn-outline-warning" id="find-game">
                   <i class="fas fa-glasses"></i>Search

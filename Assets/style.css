@@ -1,5 +1,6 @@
 /* The sidebar menu */
-.sidenav {
+.sidenav
+ {
    height: 100%; /* Full-height: remove this if you want "auto" height */
    width: 160px; /* Set the width of the sidebar */
    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -33,6 +34,12 @@
  .sidenav a:hover {
    color: #f1f1f1;
  }
+ /* button search nav & search card  */
+ .btn-group button {
+   cursor: pointer; /* Pointer/hand icon */
+   float: left; /* Float the buttons side by side */
+ }
+ 
  
  /* Style page content */
  .main {
