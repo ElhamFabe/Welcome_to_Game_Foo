@@ -147,4 +147,31 @@
    font-size: 20px; /* Increased text to enable scrolling */
    padding: 0px 10px;
   }
+
   
+.card-deck{
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 1rem 2rem;
+}
+
+
+body{
+   background-color: black;
+   color: grey;
+}
+
+.card-body{
+   background-color: black;
+   color: grey;
+}
+
+.card img{
+background-size:cover;
+}
+
+.card-title{
+   font-weight: bolder;
+   font-size: 1.75rem;
+}
