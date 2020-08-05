@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Enter your description here" />
+  <meta name="Game Foo" content="Gaming Database" />
+  <!-- bootstrap  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- awesome fonts  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- foundation by zurb -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <!--local CSS script  -->
   <link rel="stylesheet" href="Assets/style.css">
   <title>Game App</title>
 </head>
@@ -23,58 +29,65 @@
     <a href="#">Store</a>
   </div>
   <!-- <main container  -->
-  <div class="container demo">
+  <main class="container demo">
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo</h1>
 
-        <!-- Animated modal -->
-        <p><button class="button" data-toggle="animatedModal10">Sign Up</button></p>
-
-        <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in"
-          data-animation-out="fade-out">
-          <h1>Sign up for the latest news</h1>
-          <p class="lead-modal">There are many options for animating modals, check out the Motion UI library to see them
-            all</p>
-          <button class="close-button" data-close aria-label="Close reveal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- animated modal end -->
-
-        <!-- Row for game search  -->
-        <div class="row">
-          <div class="col-md-8">
-            <form id="game-form">
-              <label for="game-input">Search for a game</label>
-              <input type="text" id="game-input">
-              <br>
-
-              <!-- This button will trigger our AJAX call -->
-              <input id="find-game" type="submit" value="Game Search">
-            </form>
-
-            <div id="game-view"></div>
-          </div>
-
-          <!-- card for game search results -->
-        </div>
-        <div class="row">
-          <div class="col-md-12">
+        <!-- searching for games -->
+        <div class="row1">
+          <div class="col-md-10">
             <div class="card">
-              <div id="game-result" class="card-header">
+              <div class="card-header">
                 <strong>
-                  <i class="fa fa-table"><i> Game Results
+                  <i class="fas fa-dice-d6"></i>Search till your hearts content
                 </strong>
               </div>
-              <img src"#">
+              <div class="cardbody">
+                <!-- creating form for the user to search -->
+                <!-- number of records that the user wants to retrieve -->
+
+                <div class="form-group">
+                  <label for="game-input">Game:</label>
+                  <input type="text" class="form-control" id="game-input">
+                  <label for="pwd">Number of games to Retrieve:</label>
+                  <select id="game-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+                    <option selected value="1">1</option>
+                    <!-- Setting the option for 5 as default -->
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+                <button type="sumbit" class="btn btn-outline-warning" id="find-game">
+                  <i class="fas fa-glasses"></i>Search
+                </button>
+                <button class="btn btn-outline-warning" id="clear-search">
+                  <i class="fas fa-broom"></i>Start Over
+                </button>
+
+
+              </div>
             </div>
 
           </div>
         </div>
+        <!-- all retrieved games -->
+        <div class="row2">
+          <div class="col-md-10">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-search-dollar"></i>Looky Here
+              </div>
+              <!-- All games will go here -->
+              <div class="card-body" id="game section">
+
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Footer -->
-        <footer class="row">
+        <footer class="row3">
           <div class="col-sm-12">
             <hr>
             <h2 class="text-center dev">
@@ -84,23 +97,25 @@
             </h2>
           </div>
         </footer>
-
-
       </div>
     </div>
-    <!--  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
-    <script src="Assets/animation.js"></script>
-    <script src="Assets/script.js"></script>
+  </main>
+  <!--Jquery  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- ajax Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <!-- ajax bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- script for web awesome animation -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+  <!-- script for local background animation js -->
+  <script src="Assets/animation.js"></script>
+  <!-- javascript -->
+  <script src="Assets/script.js"></script>
 </body>
 
 </html>
