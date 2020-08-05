@@ -101,7 +101,7 @@
                             <div class="card-group">
 
                                 <!-- Card -->
-                                <div class="card mb-4" id="card-1">
+                                <div class="card mb-4" id="card-0">
 
                                     <!-- Card image -->
                                     <div class="view overlay">
@@ -123,8 +123,6 @@
                                             up
                                             the bulk of the card's
                                             content.</p>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
 
                                     </div>
                                     <!-- Card content -->
@@ -133,7 +131,7 @@
                                 <!-- Card -->
 
                                 <!-- Card -->
-                                <div class="card mb-4" id="card-2">
+                                <div class="card mb-4" id="card-1">
 
                                     <!-- Card image -->
                                     <div class="view overlay">
@@ -154,8 +152,6 @@
                                             up
                                             the bulk of the card's
                                             content.</p>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
 
                                     </div>
                                     <!-- Card content -->
@@ -164,7 +160,7 @@
                                 <!-- Card -->
 
                                 <!-- Card -->
-                                <div class="card mb-4" id="card-3">
+                                <div class="card mb-4" id="card-2">
 
                                     <!-- Card image -->
                                     <div class="view overlay">
@@ -186,8 +182,6 @@
                                             up
                                             the bulk of the card's
                                             content.</p>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
 
                                     </div>
                                     <!-- Card content -->
@@ -236,7 +230,6 @@
     <!-- javascript -->
     <script src="Assets/script.js"></script>
     <script type="text/javascript">
-
         var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games";
 
         var settings = {
@@ -252,7 +245,10 @@
         }
 
         $.ajax(settings).done(function (response) {
-            console.log(response);
+            console.log(response.results);
+            for(var i = 0; i < 3; i++){
+
+            }
         });
     </script>
 </body>
