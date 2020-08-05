@@ -75,62 +75,62 @@
                 <h1 class="main-title"><span class="thin"></span>Games</h1>
                 <!-- needs a header -->
                 <!-- multiple card bodies for games -->
-                <div class="row rowGame">
+                <div class="row rowGame" style="position: absolute; top: 800px;">
                     <div class="col-md-6 offset-3">
 
-                            <!-- Card group -->
-                            <div class="card-group">
+                        <!-- Card group -->
+                        <div class="card-group">
 
-                                <!-- Card -->
-                                <div class="card mb-4">
+                            <!-- Card -->
+                            <div class="card mb-4">
 
-                                    <!-- Card image -->
-                                    <div class="view overlay" id="card-overlay-0">
-                                        
-                                    </div>
-
-                                    <!-- Card content -->
-                                    <div class="card-body" id="card-0">
-                                    </div>
-                                    <!-- Card content -->
+                                <!-- Card image -->
+                                <div class="view overlay" id="card-overlay-0">
 
                                 </div>
-                                <!-- Card -->
-                                
-                                <!-- Card -->
-                                <div class="card mb-4">
 
-                                    <!-- Card image -->
-                                    <div class="view overlay" id="card-overlay-1">
-                                        
-                                    </div>
-
-                                    <!-- Card content -->
-                                    <div class="card-body" id="card-1">
-                                    </div>
-                                    <!-- Card content -->
-
+                                <!-- Card content -->
+                                <div class="card-body" id="card-0">
                                 </div>
-                                <!-- Card -->
-
-                                <!-- Card -->
-                                <div class="card mb-4">
-
-                                    <!-- Card image -->
-                                    <div class="view overlay" id="card-overlay-2">
-                                        
-                                    </div>
-
-                                    <!-- Card content -->
-                                    <div class="card-body" id="card-2">
-                                    </div>
-                                    <!-- Card content -->
-
-                                </div>
-                                <!-- Card -->
+                                <!-- Card content -->
 
                             </div>
-                            <!-- Card group -->
+                            <!-- Card -->
+
+                            <!-- Card -->
+                            <div class="card mb-4">
+
+                                <!-- Card image -->
+                                <div class="view overlay" id="card-overlay-1">
+
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body" id="card-1">
+                                </div>
+                                <!-- Card content -->
+
+                            </div>
+                            <!-- Card -->
+
+                            <!-- Card -->
+                            <div class="card mb-4">
+
+                                <!-- Card image -->
+                                <div class="view overlay" id="card-overlay-2">
+
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body" id="card-2">
+                                </div>
+                                <!-- Card content -->
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Card group -->
                         <!-- </div> -->
                     </div>
                 </div>
@@ -187,21 +187,21 @@
 
         $.ajax(settings).done(function (response) {
             console.log(response.results);
-            for(var i = 0; i < 3; i++){
+            for (var i = 0; i < 3; i++) {
                 randomIndex = Math.floor(Math.random() * response.results.length);
                 console.log(randomIndex);
-                if(response.results[randomIndex].background_image != null){
+                if (response.results[randomIndex].background_image != null) {
                     var imgEl = response.results[randomIndex].background_image;
                     var imgTag = $("<img>");
                     imgTag.attr("src", imgEl);
                     imgTag.attr("style", "height: 200px; width: 100%");
                     $("#card-overlay-" + i).append(imgTag);
                 }
-                if(response.results[randomIndex].name != null){
+                if (response.results[randomIndex].name != null) {
                     var nameEl = response.results[randomIndex].name;
                     var titleP = $("<p>").text(nameEl);
                     $("#card-" + i).append(titleP);
-                }   
+                }
             }
         });
 
