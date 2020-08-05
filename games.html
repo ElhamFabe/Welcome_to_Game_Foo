@@ -74,9 +74,9 @@
                 <h1 class="main-title"><span class="thin"></span>Games</h1>
                 <!-- needs a header -->
                 <!-- multiple card bodies for games -->
-                <div class="row rowGAme">
+                <div class="row rowGame">
                     <div class="col-md-6 offset-3">
-                        <div class="card">
+                        <!-- <div class="card"> -->
                             <!-- <div class="card-header search">
                                 <strong>
                                     <i class="fas fa-dice-d6"></i> Search till your hearts content
@@ -150,7 +150,7 @@
 
                             </div>
                             <!-- Card group -->
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -206,14 +206,17 @@
         $.ajax(settings).done(function (response) {
             console.log(response.results);
             for(var i = 0; i < 3; i++){
-                if(response.results[i].background_image != null){
-                    var imgEl = response.results[i].background_image;
+                randomIndex = Math.floor(Math.random() * response.results.length);
+                console.log(randomIndex);
+                if(response.results[randomIndex].background_image != null){
+                    var imgEl = response.results[randomIndex].background_image;
                     var imgTag = $("<img>");
                     imgTag.attr("src", imgEl);
+                    imgTag.attr("style", "height: 200px; width: 100%");
                     $("#card-overlay-" + i).append(imgTag);
                 }
-                if(response.results[i].name != null){
-                    var nameEl = response.results[i].name;
+                if(response.results[randomIndex].name != null){
+                    var nameEl = response.results[randomIndex].name;
                     var titleP = $("<p>").text(nameEl);
                     $("#card-" + i).append(titleP);
                 }   
