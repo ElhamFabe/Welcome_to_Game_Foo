@@ -19,7 +19,16 @@
    color: #818181;
    display: block;
  }
- 
+ .sidenav div label {
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   color: #818181;
+   display: block;
+}
+.sidenav .form-group {
+  margin: 5px 10px
+}
  /* When you mouse over the navigation links, change their color */
  .sidenav a:hover {
    color: #f1f1f1;
