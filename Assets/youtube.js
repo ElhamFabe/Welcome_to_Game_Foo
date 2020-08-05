@@ -37,7 +37,7 @@ function embedVideo(data) {
 }
 // Call the function to search
 $(".searchBtn").on("click", function() {
-    var textBox = $(".searchInput").val()
+    var textBox = $("#game-Input").val()
     getVideo(textBox);
     console.log(textBox)
 })
