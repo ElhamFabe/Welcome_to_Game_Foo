@@ -75,130 +75,63 @@
                 <h1 class="main-title"><span class="thin"></span>Games</h1>
                 <!-- needs a header -->
                 <!-- multiple card bodies for games -->
-                <div class="row rowGAme">
+                <div class="row rowGame" style="position: absolute; top: 800px;">
                     <div class="col-md-6 offset-3">
-                        <div class="card">
-                            <!-- <div class="card-header search">
-                                <strong>
-                                    <i class="fas fa-dice-d6"></i> Search till your hearts content
-                                </strong>
-                            </div>
-                            <div class="cardbody search">
-                                <!-- creating form for the user to search -->
-                            <!-- <div class="form-group">
-                                    <label for="game-input">Game:</label>
-                                    <input type="text" class="form-control" id="game-input">
-                                </div>
-    
-                                <button type="sumbit" class="btn btn-outline-warning" id="find-game">
-                                    <strong><i class="fas fa-glasses"></i> Search</strong>
-                                </button>
-                                <button class="btn btn-outline-warning" id="clear-search">
-                                    <strong><i class="fas fa-broom"></i> Start Over </strong>
-                                </button>
-    
-                            </div> -->
-                            <!-- Card group -->
-                            <div class="card-group">
 
-                                <!-- Card -->
-                                <div class="card mb-4" id="card-1">
+                        <!-- Card group -->
+                        <div class="card-group">
 
-                                    <!-- Card image -->
-                                    <div class="view overlay">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg"
-                                            alt="Card image cap">
-                                        <a href="#!">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
+                            <!-- Card -->
+                            <div class="card mb-4">
 
-                                    <!-- Card content -->
-                                    <div class="card-body">
-
-                                        <!-- Title -->
-                                        <h4 class="card-title">Card title</h4>
-                                        <!-- Text -->
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's
-                                            content.</p>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
-
-                                    </div>
-                                    <!-- Card content -->
+                                <!-- Card image -->
+                                <div class="view overlay" id="card-overlay-0">
 
                                 </div>
-                                <!-- Card -->
 
-                                <!-- Card -->
-                                <div class="card mb-4" id="card-2">
-
-                                    <!-- Card image -->
-                                    <div class="view overlay">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg"
-                                            alt="Card image cap">
-                                        <a href="#!">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Card content -->
-                                    <div class="card-body">
-                                        <!-- Title -->
-                                        <h4 class="card-title">Card title</h4>
-                                        <!-- Text -->
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's
-                                            content.</p>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
-
-                                    </div>
-                                    <!-- Card content -->
-
+                                <!-- Card content -->
+                                <div class="card-body" id="card-0">
                                 </div>
-                                <!-- Card -->
-
-                                <!-- Card -->
-                                <div class="card mb-4" id="card-3">
-
-                                    <!-- Card image -->
-                                    <div class="view overlay">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg"
-                                            alt="Card image cap">
-                                        <a href="#!">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Card content -->
-                                    <div class="card-body">
-
-                                        <!-- Title -->
-                                        <h4 class="card-title">Card title</h4>
-                                        <!-- Text -->
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's
-                                            content.</p>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
-
-                                    </div>
-                                    <!-- Card content -->
-
-                                </div>
-                                <!-- Card -->
+                                <!-- Card content -->
 
                             </div>
-                            <!-- Card group -->
+                            <!-- Card -->
+
+                            <!-- Card -->
+                            <div class="card mb-4">
+
+                                <!-- Card image -->
+                                <div class="view overlay" id="card-overlay-1">
+
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body" id="card-1">
+                                </div>
+                                <!-- Card content -->
+
+                            </div>
+                            <!-- Card -->
+
+                            <!-- Card -->
+                            <div class="card mb-4">
+
+                                <!-- Card image -->
+                                <div class="view overlay" id="card-overlay-2">
+
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body" id="card-2">
+                                </div>
+                                <!-- Card content -->
+
+                            </div>
+                            <!-- Card -->
+
                         </div>
+                        <!-- Card group -->
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -236,6 +169,43 @@
     <script src="Assets/animation.js"></script>
     <!-- javascript -->
     <script src="Assets/script.js"></script>
+    <script type="text/javascript">
+
+        var queryURL = "https://rawg-video-games-database.p.rapidapi.com/games";
+
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": queryURL,
+            "method": "GET",
+            // "success": function();
+            "headers": {
+                "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
+                "x-rapidapi-key": "459bb2a183mshc0681ca6ce8d05cp17f108jsnec2b6aceda17"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response.results);
+            for (var i = 0; i < 3; i++) {
+                randomIndex = Math.floor(Math.random() * response.results.length);
+                console.log(randomIndex);
+                if (response.results[randomIndex].background_image != null) {
+                    var imgEl = response.results[randomIndex].background_image;
+                    var imgTag = $("<img>");
+                    imgTag.attr("src", imgEl);
+                    imgTag.attr("style", "height: 200px; width: 100%");
+                    $("#card-overlay-" + i).append(imgTag);
+                }
+                if (response.results[randomIndex].name != null) {
+                    var nameEl = response.results[randomIndex].name;
+                    var titleP = $("<p>").text(nameEl);
+                    $("#card-" + i).append(titleP);
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>

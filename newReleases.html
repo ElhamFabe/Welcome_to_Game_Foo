@@ -28,8 +28,8 @@
         <!-- icons for new releases placehoders -->
         <a href="#"><img src="Assets/images/fire.png" width="30" height="30" class="d-inline-block align-top"
                 alt="fire Icon">This week</a>
-        <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
-                alt="Xbox Icon">This month</a>
+        <a href="#"><img src="Assets/images/calendar.png" width="30" height="30" class="d-inline-block align-top"
+                alt="Calendar Icon">This month</a>
         <!-- platform -->
         <a href="platforms.html"><strong>Platforms</strong></a>
         <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
@@ -43,53 +43,99 @@
             PC</a>
         <!-- </div> -->
         <!-- games icon -->
-        <a href="games.html"><strong>Games</strong< /a>
+        <a href="games.html"><strong>Games</strong></a>
 
-                <!-- dev icon -->
-                <!-- <a href="developer.html">Developer</a> -->
-                <a href="developer.html"><img src="Assets/images/dev.png" width="30" height="30"
-                        class="d-inline-block align-top" alt="PC Icon"><strong>Developers</strong< /a>
-                        <!-- store icon -->
-                        <!-- <a href="store.html">Store</a> -->
-                        <a href="store.html"><img src="Assets/images/store.png" width="30" height="30"
-                                class="d-inline-block align-top" alt="PC Icon"><strong>Store</strong></a>
-
-                        <!-- search bar needs Ajax call -->
-                        <!-- <div class="form-group">
-          <label for="game-input2">Search Game:</label>
-          <input type="text" class="form-control" id="game-section2">
-        </div>
-        <button type="submit" class="btn btn-group btn-outline-warning" id="find-game2">
-          <strong> <i class="fas fa-glasses"></i> Search </strong>
-        </button>
-        <button class="btn btn-group btn-outline-warning" id="clear-search2">
-          <strong> <i class="fas fa-broom"></i> Clear </strong>
-        </button> -->
-
+        <!-- dev icon -->
+        <!-- <a href="developer.html">Developer</a> -->
+        <a href="developer.html"><img src="Assets/images/dev.png" width="30" height="30"
+                class="d-inline-block align-top" alt="PC Icon"><strong>Developers</strong< /a>
+                <!-- store icon -->
+                <!-- <a href="store.html">Store</a> -->
+                <a href="store.html"><img src="Assets/images/store.png" width="30" height="30"
+                        class="d-inline-block align-top" alt="PC Icon"><strong>Store</strong></a>
     </nav>
     <!-- <main container  -->
     <main class="container-fluid demo">
         <div class="content">
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
-                <!-- <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1> -->
+                <h2 class="main-title" style="position:absolute; top:200px;">New Releases </h2>
                 <!-- card's for new releases by zurb-->
-                <div class="grid-y grid-margin-y">
-                    <!-- card body and video for snippet of games-->
-
-                    <!-- Footer -->
-                    <footer class="dev">
-                        <div class="col-sm-12">
-                            <hr>
-                            <h2 class="text-center dev">
-                                Powered by your favorite Game-Foo dev's
-                                <i class=" fa fa-bolt">
-                                </i>
-                            </h2>
+                <!-- styling to overwrite background -->
+                <div class="grid-container" style="position: absolute; top:700px; left:600px;">
+                    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+                        <div class="cell">
+                            <div class="card">
+                                <img src="assets/img/generic/rectangle-1.jpg">
+                                <div class="card-section">
+                                    <h4>This is a row of cards.</h4>
+                                    <p>This row of cards is embedded in an X-Y Block Grid.</p>
+                                </div>
+                            </div>
                         </div>
-                    </footer>
+                        <div class="cell">
+                            <div class="card">
+                                <img src="assets/img/generic/rectangle-1.jpg">
+                                <div class="card-section">
+                                    <h4>This is a card.</h4>
+                                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="card">
+                                <img src="assets/img/generic/rectangle-1.jpg">
+                                <div class="card-section">
+                                    <h4>This is a card.</h4>
+                                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+                        <div class="cell">
+                            <div class="card">
+                                <img src="assets/img/generic/rectangle-1.jpg">
+                                <div class="card-section">
+                                    <h4>This is a row of cards.</h4>
+                                    <p>This row of cards is embedded in an Flex Block Grid.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="card">
+                                <img src="assets/img/generic/rectangle-1.jpg">
+                                <div class="card-section">
+                                    <h4>This is a card.</h4>
+                                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="card">
+                                <img src="assets/img/generic/rectangle-1.jpg">
+                                <div class="card-section">
+                                    <h4>This is a card.</h4>
+                                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Footer -->
+                <footer class="dev">
+                    <div class="col-sm-12">
+                        <hr>
+                        <h2 class="text-center dev">
+                            Powered by your favorite Game-Foo dev's
+                            <i class=" fa fa-bolt">
+                            </i>
+                        </h2>
+                    </div>
+                </footer>
             </div>
+        </div>
         </div>
     </main>
     <!--Jquery  -->
