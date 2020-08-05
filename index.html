@@ -24,26 +24,50 @@
   <nav class="sidenav">
     <a href="index.html">Home</a>
     <a href="newReleases.html">New Releases</a>
-    <button class="dropdown-btn">Platforms
-      <i class="fa fa-caret-down"></i>
+    <!-- icons for new releases placehoders -->
+    <a href="#"><img src="Assets/images/fire.png" width="30" height="30" class="d-inline-block align-top"
+        alt="fire Icon">This week</a>
+    <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
+        alt="Xbox Icon">this month</a>
+    <!-- platform -->
+    <a href="platforms.html">Platforms</a>
+    <!-- <button class="dropdown-btn">Platforms
+      <i class="fa fa-caret-down"></i> -->
     </button>
-    <div class="dropdown-container">
-      <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
-          alt="Xbox Icon">Xbox</a>
-      <a href="#"><img src="Assets/images/ps4.png" width="30" height="30" class="d-inline-block align-top"
-          alt="Playstation Icon">Playstation</a>
-      <a href="#"><img src="Assets/images/nintendo.png" width="30" height="30" class="d-inline-block align-top"
-          alt="Nintendo Icon">Nintendo</a>
-      <a href="#"><img src="Assets/images/pc.png" width="30" height="30" class="d-inline-block align-top"
-          alt="PC Icon">PC</a>
-    </div>
+    <!-- <div class="dropdown-container"> -->
+    <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
+        alt="Xbox Icon">Xbox</a>
+    <a href="#"><img src="Assets/images/ps4.png" width="30" height="30" class="d-inline-block align-top"
+        alt="Playstation Icon">Playstation</a>
+    <a href="#"><img src="Assets/images/nintendo.png" width="30" height="30" class="d-inline-block align-top"
+        alt="Nintendo Icon">Nintendo</a>
+    <a href="#"><img src="Assets/images/pc.png" width="30" height="30" class="d-inline-block align-top" alt="PC Icon">
+      PC</a>
+    <!-- </div> -->
+    <!-- games icon -->
     <a href="games.html">Games</a>
-    <a href="developer.html">Developer</a>
-    <a href="store.html">Store</a>
-    <div class="form-group">
-      <label for="game-search2">Search Game:</label>
-      <input type="text" class="form-control" id="game-search2">
+
+    <!-- dev icon -->
+    <!-- <a href="developer.html">Developer</a> -->
+    <a href="developer.html"><img src="Assets/images/dev.png" width="30" height="30" class="d-inline-block align-top"
+        alt="PC Icon"> Developers </a>
+    <!-- store icon -->
+    <!-- <a href="store.html">Store</a> -->
+    <a href="store.html"><img src="Assets/images/store.png" width="30" height="30" class="d-inline-block align-top"
+        alt="PC Icon"> Store</a>
+
+    <!-- search bar needs Ajax call -->
+    <div class="form-group"> -->
+      <label for="game-input">Search Game:</label>
+      <input type="text" class="form-control" id="game-section">
     </div>
+    <button type="submit" class="btn btn-group btn-outline-warning" id="find-game">
+      <strong> <i class="fas fa-glasses"></i> Search </strong>
+    </button>
+    <button class="btn btn-group btn-outline-warning" id="clear-search">
+      <strong> <i class="fas fa-broom"></i> Clear </strong>
+    </button>
+
   </nav>
   <!-- <main container  -->
   <main class="container-fluid demo">
@@ -51,19 +75,6 @@
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1>
-        <!-- Animated modal possibly for sign up's-->
-        <p><button class="button" data-toggle="animatedModal10">Sign Up</button></p>
-
-        <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in"
-          data-animation-out="fade-out">
-          <h1>Sign up for the latest news</h1>
-          <p class="lead-modal">There are many options for animating modals, check out the Motion UI library to see them
-            all</p>
-          <button class="close-button" data-close aria-label="Close reveal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- animated modal end -->
         <!-- searching for games -->
         <div class="row row1">
           <div class="col-md-6 offset-3">
@@ -75,19 +86,19 @@
               </div>
               <div class="cardbody search">
                 <!-- creating form for the user to search -->
-
-                <!-- number of records that the user wants to retrieve -->
-
                 <div class="form-group">
                   <label for="game-input">Game:</label>
                   <input type="text" class="form-control" id="game-input">
                   <label for="pwd">Number of games to Retrieve:</label>
-                  <select id="game-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+
+                  <!-- optional game article retrieval -->
+                  <!-- <select id="game-count" class="custom-select" aria-labelledby="dropdownMenuButton">
                     <option selected value="1">1</option>
-                    <!-- Setting the option for 5 as default -->
+                    Setting the option for 5 as default
                     <option value="5" selected>5</option>
                     <option value="10">10</option>
-                  </select>
+                  </select> -->
+
                 </div>
                 <button type="sumbit" class="btn btn-outline-warning" id="find-game">
                   <i class="fas fa-glasses"></i>Search
