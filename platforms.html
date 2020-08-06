@@ -25,12 +25,6 @@
     <br>
     <a href="index.html"><img src="Assets/images/home.png" width="30" height="30" class="d-inline-block align-top"
         alt="House Icon"><strong>Home</strong></a>
-    <a href="newReleases.html"><strong>New Releases</strong></a>
-    <!-- icons for new releases placehoders -->
-    <a href="#"><img src="Assets/images/fire.png" width="30" height="30" class="d-inline-block align-top"
-        alt="fire Icon">This week</a>
-    <a href="#"><img src="Assets/images/calendar.png" width="30" height="30" class="d-inline-block align-top"
-        alt="Calendar Icon">This month</a>
     <!-- platform -->
     <a href="platforms.html"><strong>Platforms</strong></a>
     <a href="#"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
@@ -43,110 +37,104 @@
       PC</a>
     <!-- </div> -->
     <!-- games icon -->
-    <a href="games.html"><strong>Games</strong</a>
-
+    <a href="games.html"><strong>Games</strong< /a>
         <!-- dev icon -->
-        <!-- <a href="developer.html">Developer</a> -->
         <a href="developer.html"><img src="Assets/images/dev.png" width="30" height="30"
             class="d-inline-block align-top" alt="PC Icon"><strong>Developers</strong< /a>
-            <!-- store icon -->
-            <!-- <a href="store.html">Store</a> -->
-            <a href="store.html"><img src="Assets/images/store.png" width="30" height="30"
-                class="d-inline-block align-top" alt="PC Icon"><strong>Store</strong></a>
-
-            <!-- search bar needs Ajax call -->
-            <!-- <div class="form-group">
-      <label for="game-input2">Search Game:</label>
-      <input type="text" class="form-control" id="game-section2">
-    </div>
-    <button type="submit" class="btn btn-group btn-outline-warning" id="find-game2">
-      <strong> <i class="fas fa-glasses"></i> Search </strong>
-    </button>
-    <button class="btn btn-group btn-outline-warning" id="clear-search2">
-      <strong> <i class="fas fa-broom"></i> Clear </strong>
-    </button> -->
 
   </nav>
-    <!-- <main container  -->
-    <main class="container-fluid demo">
+  <!-- <main container  -->
+  <main class="container-fluid demo">
 
-        <div class="content offset-1">
-            <div id="large-header" class="large-header">
-                <canvas id="demo-canvas"></canvas>
-                <div class="card-deck">
-                    <div class="card">
-                      <img src="Assets/images/vs.png" class="card-img-top" alt="..." style="height:250px;width:350px">
-                      <div class="card-body">
-                        <h5 class="card-title">Specs</h5>
-                        <div class="row">Price
-                        </div>
-                         <div class="row">Resolution
-                        </div>
-                        <div class="row">Processor
-                        </div>
-                        <div class="row">RAM
-                        </div>
-                        <div class="row">Storage
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="Assets/images/nintendo c.jpg" class="card-img-top" alt="..." style="height:250px;width:350px">
-                      <div class="card-body">
-                        <h5 class="card-title">Nintendo Switch</h5>
-                        <div class="row">$300
-                        </div>
-                         <div class="row">1,280 x 720 (portable) 1,920 x 1,080 (console)
-                        </div>
-                        <div class="row">Nvidia customized Tegra processor
-                        </div>
-                        <div class="row">4GB
-                        </div>
-                        <div class="row">32GB flash storage 
-                        </div>
-                      </div>
-                     </div>
-                
-                     <div class="card">
-                        <img src="Assets/images/ps4 c.jpeg" class="card-img-top" alt="..." style="height:250px;width:350px">
-                        <div class="card-body">
-                          <h5 class="card-title">PS4 Pro</h5>
-                          <div class="row">$400
-                        </div>
-                         <div class="row">3840 x 2160
-                        </div>
-                        <div class="row">x86-64 AMD 8-core "Jaguar"
-                        </div>
-                        <div class="row">8GB
-                        </div>
-                        <div class="row">1TB 
-                        </div>
-                      </div>
-                    </div>
-                      
-                        <div class="card">
-                        <img src="Assets/images/xbox c.jpeg" class="card-img-top" alt="..." style="height:250px;width:350px">
-                        <div class="card-body">
-                          <h5 class="card-title">XBox One X</h5>
-                          <div class="row">$500
-                        </div>
-                         <div class="row">Native 4K
-                        </div>
-                        <div class="row">2.3GHz 8-core AMD Custom 
-                        </div>
-                        <div class="row">12GB GDDR5
-                        </div>
-                        <div class="row">1TB HDD
-                        </div>
-                      </div>
-                     </div>
-                        </div>
-                    
-                    </div>
-                </div>
-        </div>
-    </main>
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <section class="card-deck" style="position: absolute; top: 500px; left: 500px;">
+          <section class="card">
+            <figure>
+              <img src="Assets/images/vs.png" class="card-img-top" alt="Merge controller"
+                style="height:250px;width:350px">
+            </figure>
+            <article class="card-body" style="text-align: center;">
+              <h5 class="card-title">Specs</h5>
+              <details class="row">Price
+                <br>
+                Resolution
+                <br>
+                Processor
+                <br>
+                RAM
+                <br>
+                Storage
+              </details>
+            </article>
+          </section>
+          <section class="card">
+            <figure>
+              <img src="Assets/images/nintendo c.jpg" class="card-img-top" alt="Nintendo"
+                style="height:250px;width:350px">
+            </figure>
+            <article class="card-body" style="text-align: center;">
+              <h5 class="card-title">Nintendo Switch</h5>
+              <details class="row">
+                $300
+                <br>
+                1280 x 720 (portable) 1920 x 1080 (console)
+                <br>
+                Nvidia customized Tegra processor
+                <br>
+                4GB
+                <br>
+                32GB flash storage
+              </details>
+            </article>
+          </section>
+
+          <section class="card">
+            <figure>
+              <img src="Assets/images/ps4 c.jpeg" class="card-img-top" alt="Playstation 4 controller"
+                style="height:250px;width:350px">
+            </figure>
+            <article class="card-body" style="text-align: center;">
+              <h5 class="card-title">PS4 Pro</h5>
+              <details class="row">
+                $400
+                <br>
+                3840 x 2160
+                <br>
+                x86-64 AMD 8-core "Jaguar"
+                <br>
+                8GB
+                <br>
+                1TB
+              </details>
+            </article>
+          </section>
+          <section class="card">
+            <figure>
+              <img src="Assets/images/xbox c.jpeg" class="card-img-top" alt="Xbox controller"
+                style="height:250px;width:350px">
+            </figure>
+            <article class="card-body" style="text-align: center;">
+              <h5 class="card-title">XBox One X</h5>
+              <details class="row">
+                $500
+                <br>
+                Native 4k
+                <br>
+                2.3GHz 8-core AMD Custom
+                <br>
+                12GB GDDRS
+                <br>
+                1TB HDD
+              </details>
+            </article>
+          </section>
+        </section>
+      </div>
+    </div>
+    </div>
+  </main>
   <!--Jquery  -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
@@ -169,4 +157,3 @@
 </body>
 
 </html>
-
