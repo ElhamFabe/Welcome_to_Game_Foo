@@ -27,7 +27,9 @@
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response.results);
+            console.log(response.results[0].embed_player);
+            videoSrc = $("<a>").text("video link").attr("href", response.results[0].embed_player);
+            $("#mainDiv").append(videoSrc);
         });
     </script>
 </body>
