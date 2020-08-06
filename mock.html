@@ -64,7 +64,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+
+    <script text="text/javascript">
+    var youtubeKey = "AIzaSyDL5un0sNGWGygDMg5syX3dgefWaHbfTRI"
+    var urlYoutube = "https://www.googleapis.com/youtube/v3/search?part=id&q=tuto&type=video&key=" + youtubeKey
+    $.ajax({
+      type: 'GET',
+      url: urlYoutube,
+      data: {
+          q: fortnite,
+          part: 'snippet',
+          maxResults: 3,
+          type: 'video',
+          videoEmbeddable: true,
+      },
+      success: function(data){
+        console.log("Data: ", data)  
+        embedVideo(data)
+        // data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+      },
+      error: function(response){
+          console.log("Request Failed");
+      }
+    });
+    </script>
     <script src="mock.js"></script>
+
 
 </body>
 

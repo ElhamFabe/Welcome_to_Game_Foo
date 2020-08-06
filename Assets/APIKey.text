@@ -54,3 +54,8 @@ $.ajax(settings).done(function (response) {
 
 youtube API key
 AIzaSyD0-zt1iIE2Jrk3fEwN9jCgBEvdZckoK4I
+
+giantbomb
+var key = 9add677be2f47beebb6e7c0925d0d0af08bd9059
+
+queryURL: "https://www.giantbomb.com/api/video_shows/?api_key=" + key;

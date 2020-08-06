@@ -1,4 +1,6 @@
-var youtubeKey = "AIzaSyBu8RSpVxS7pA9qPzsOIkQjEfQCwV1UFMc"
+
+var youtubeKey = "AIzaSyDL5un0sNGWGygDMg5syX3dgefWaHbfTRI"
+
 var urlYoutube = "https://www.googleapis.com/youtube/v3/search?part=id&q=tuto&type=video&key=" + youtubeKey
 // Request Function
 function getVideo(searchInfo) {
@@ -14,7 +16,7 @@ function getVideo(searchInfo) {
           videoEmbeddable: true,
       },
       success: function(data){
-        console.log(data)  
+        console.log("Data: ", data)  
         embedVideo(data)
         // data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
       },
@@ -36,7 +38,7 @@ function embedVideo(data) {
     $('.description3').text(data.items[2].snippet.description)
 }
 // Call the function to search
-$("#search").on("click", function() {
+$("#form").on("click", function() {
     var textBox = $("#game-Input").val()
     getVideo(textBox);
     console.log(textBox)
