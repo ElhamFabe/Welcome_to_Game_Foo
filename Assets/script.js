@@ -45,15 +45,8 @@ $(document).ready(function () {
                 $("#game-section").append(ratingP);
             }
 
-            if(response.description != null){
-                var descriptionEl = response.description_raw;   
-                console.log(descriptionEl);
-                var descriptionP = $("<p>").text("Description: " + descriptionEl)
-                $("#game-section").append(descriptionP);
-            }
-           
             if(response.genres != null){
-                var genreList = $("<ul>").text("Genres:");
+                var genreList = $("<ul>").text("Genre(s):");
                 $("#game-section").append(genreList);
                 for(var i = 0; i < response.genres.length; i++){
                     var genreEl = response.genres[i].name;
@@ -61,7 +54,15 @@ $(document).ready(function () {
                     $("#game-section").append(listEl);
                 }
             }
-            
+
+            if(response.description != null){
+                var lineBreak = $("<br>");
+                $("#game-section").append(lineBreak);
+                var descriptionEl = response.description_raw;   
+                console.log(descriptionEl);
+                var descriptionP = $("<p>").text("Description: " + descriptionEl)
+                $("#game-section").append(descriptionP);
+            }
 
             if(response.metacritic != null){
                 var metacriticEl = response.metacritic;
@@ -70,22 +71,25 @@ $(document).ready(function () {
                 $("#game-section").append(metacriticP);
             }
             
-            if(response.developers != null){ 
+            if(response.developers != null){
+                var genreList = $("<ul>").text("Developer(s):");
+                $("#game-section").append(genreList); 
                 for(var i = 0; i < response.developers.length; i++){    
-                    var developerEl = response.genres[i].name;
-                    var listEl = $("<li>").text(genreEl);
+                    var developerEl = response.developers[i].name;
+                    var listEl = $("<li>").text(developerEl);
                     $("#game-section").append(listEl);
                 }
             }
             
-            //need to work with array for publishers
-            // var publisherEl = [];
-            // if(response.publishers != null){
-            //     for(var i = 0; i < response.publishers.length; i++){ 
-            //         publisherEl[i] = response.publishers[i].name;
-            //         console.log(publisherEl[i]);
-            //     }
-            // }
+            if(response.developers != null){
+                var genreList = $("<ul>").text("Publisher(s):");
+                $("#game-section").append(genreList); 
+                for(var i = 0; i < response.publisher.length; i++){    
+                    var publishererEl = response.publishers[i].name;
+                    var listEl = $("<li>").text(publisherEl);
+                    $("#game-section").append(listEl);
+                }
+            }
             
             if(response.release != null){
                 var releaseEl = response.released;
