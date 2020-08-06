@@ -59,3 +59,9 @@ giantbomb
 var key = 9add677be2f47beebb6e7c0925d0d0af08bd9059
 
 queryURL: "https://www.giantbomb.com/api/video_shows/?api_key=" + key;
+
+youtube api keys:
+
+Heather: AIzaSyAV-DlVCJRNKy95-Of12zqhpXpNUiB1Q6o
+Dan: AIzaSyBkMZFvWytktX_8Zu--Tc6xOM9H0em8oT0
+Dan2: AIzaSyBu8RSpVxS7pA9qPzsOIkQjEfQCwV1UFMc
