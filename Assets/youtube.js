@@ -14,7 +14,7 @@ function getVideo(searchInfo) {
           videoEmbeddable: true,
       },
       success: function(data){
-        console.log(data)  
+        console.log("Data: ", data)  
         embedVideo(data)
         // data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
       },
@@ -36,7 +36,7 @@ function embedVideo(data) {
     $('.description3').text(data.items[2].snippet.description)
 }
 // Call the function to search
-$("#search").on("click", function() {
+$("#form").on("click", function() {
     var textBox = $("#game-Input").val()
     getVideo(textBox);
     console.log(textBox)

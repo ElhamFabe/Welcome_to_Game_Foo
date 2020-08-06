@@ -31,28 +31,6 @@
             </div>
         </div>
 
-        <div class="col-md-8 offset-3">
-            <h2 class="descriptionTitle1 titleYouTube"></h2>
-            <iframe class="embed1" width="425" height="240" src="https://www.youtube.com/embed/QW28YKqdxe0"
-                frameborder="ption1"></h4>
-        </div>
-        <div class="col-md-8 offset-3">
-            <h2 class="descriptionTitle1 titleYouTube"></h2>
-            <iframe class="embed2" width="425" height="240" src="https://www.youtube.com/embed/QW28YKqdxe0"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <h4 class="description1"></h4>
-        </div>
-        <div class="col-md-8 offset-3">
-            <h2 class="descriptionTitle1 titleYouTube"></h2>
-            <iframe class="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <h4 class="descriembed1" width="425" height="240" src="https://www.youtube.com/embed/QW28YKqdxe0"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <h4 class="description1"></h4>
-        </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
@@ -60,7 +38,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <script src="./mock.js"></script>
+    <script text="text/javascript">
+    var youtubeKey = "AIzaSyDL5un0sNGWGygDMg5syX3dgefWaHbfTRI"
+    var urlYoutube = "https://www.googleapis.com/youtube/v3/search?part=id&q=tuto&type=video&key=" + youtubeKey
+    $.ajax({
+      type: 'GET',
+      url: urlYoutube,
+      data: {
+          q: fortnite,
+          part: 'snippet',
+          maxResults: 3,
+          type: 'video',
+          videoEmbeddable: true,
+      },
+      success: function(data){
+        console.log("Data: ", data)  
+        embedVideo(data)
+        // data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+      },
+      error: function(response){
+          console.log("Request Failed");
+      }
+    });
+    </script>
 </body>
 
 </html>
