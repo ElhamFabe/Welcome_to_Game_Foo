@@ -8,7 +8,7 @@ var settings = {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
-		"x-rapidapi-key": "459bb2a183mshc0681ca6ce8d05cp17f108jsnec2b6aceda17"
+		"x-rapidapi-key": "AIzaSyAV-DlVCJRNKy95-Of12zqhpXpNUiB1Q6o"
 	}
 }
 
