@@ -27,7 +27,13 @@
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response.results);
+            console.log(response.results.embed_player);
+            randomIndex = Math.floor(Math.random() * response.results.length)
+            for(var i = 0; i < 3; i++){
+                videoTag = $("<iframe>").attr("src", response.results[randomIndex].embed_player);
+                $("#mainDiv").append(videoTag);
+                response.results.splice(randomIndex, 1)
+            }
         });
     </script>
 </body>
