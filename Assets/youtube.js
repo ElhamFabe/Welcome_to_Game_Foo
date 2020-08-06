@@ -1,4 +1,4 @@
-var youtubeKey = "AIzaSyAEWwI1KJUdawIp7HNTPXVgMZAERaYxNxA"
+var youtubeKey = "AIzaSyBu8RSpVxS7pA9qPzsOIkQjEfQCwV1UFMc"
 var urlYoutube = "https://www.googleapis.com/youtube/v3/search?part=id&q=tuto&type=video&key=" + youtubeKey
 // Request Function
 function getVideo(searchInfo) {
