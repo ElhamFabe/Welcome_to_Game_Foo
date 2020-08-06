@@ -182,6 +182,11 @@
                     var titleP = $("<p>").text(nameEl);
                     $("#card-" + i).append(titleP);
                 }
+                if (response.results[randomIndex].metacritic != null) {
+                    var ratingEl = response.results[randomIndex].metacritic;
+                    var ratingP = $("<p>").text("Metacritic: " + ratingEl);
+                    $("#card-" + i).append(ratingP);
+                }
             }
         });
 
