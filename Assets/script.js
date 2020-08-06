@@ -60,7 +60,8 @@ $(document).ready(function () {
                 $("#game-section").append(lineBreak);
                 var descriptionEl = response.description_raw;   
                 console.log(descriptionEl);
-                var descriptionP = $("<p>").text("Description: " + descriptionEl)
+                var noSharp = descriptionEl.replace(/###/g, "");
+                var descriptionP = $("<p>").text("Description: " + noSharp);
                 $("#game-section").append(descriptionP);
             }
 
