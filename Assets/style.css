@@ -1,39 +1,42 @@
-/* The sidebar menu */
-.sidenav
- {
-   height: 100%; /* Full-height: remove this if you want "auto" height */
-   width: 160px; /* Set the width of the sidebar */
-   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-   z-index: 1; /* Stay on top */
-   top: 0; /* Stay at the top */
+body{
+   background-color: black;
+   color: f1f1f1;
+}
+
+/* The sidebar menu *//* Fixed sidenav, full height */
+.sidenav {
+   height: 100%;
+   width: 10vw;
+   position: fixed;
+   z-index: 1;
+   top: 0;
    left: 0;
-   background-color: #111; /* Black */
-   overflow-x: hidden; /* Disable horizontal scroll */
+   background-color: #111;
+   overflow-x: hidden;
    padding-top: 20px;
- }
- 
- /* The navigation menu links */
- .sidenav a {
+   transition: ease-in;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
    padding: 6px 8px 6px 16px;
    text-decoration: none;
-   font-size: 25px;
+   font-size: 20px;
    color: #818181;
    display: block;
- }
- .sidenav div label {
-   padding: 6px 8px 6px 16px;
-   text-decoration: none;
-   font-size: 18px;
-   color: #818181;
-   display: block;
-}
-.sidenav .form-group {
-  margin: 5px 10px
-}
- /* When you mouse over the navigation links, change their color */
- .sidenav a:hover {
+   border: none;
+   background: none;
+   width:100%;
+   text-align: left;
+   cursor: pointer;
+   outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
    color: #f1f1f1;
- }
+  }
+
 
  /* Style page content */
  .main {
@@ -75,12 +78,17 @@
    padding: 0;
    color: #f9f1e9;
    text-align: center;
-   top:50%;
+   top:10%;
    left: 50%;
    -webkit-transform: translate3d(-50%,-50%,0);
    transform: translate(-50%,-50%,0);
 }
 
+#demo-canvas {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
 
 .demo .main-title{
    text-transform: uppercase;
@@ -100,9 +108,41 @@
 /* end of background animation */
 
 /* search card */
-.search,
+.search
 #game-section {
    text-align: center;
+}
+/* index row */
+.gameRow {
+   margin-top: 400px;
+}
+.lookyHere{
+   top: 100rem;
+}
+/* game html  */
+#form{
+   position: absolute;
+   top: 10rem;
+} 
+#videos {
+   position: absolute;
+   top: 30rem;
+   left: 60rem;
+}
+.form-group6
+{
+   position: absolute;
+   top: 10rem;
+   left: 50rem;
+
+}
+.rowGame 
+{
+   position: absolute;
+   top: 20rem;
+   justify-content: center;
+   width: 100rem;
+   /* height: 100px; */
 }
 /* developer cards */
 .devGroup {
@@ -114,75 +154,38 @@
    margin-top: 500px;
    background-color: transparent;
 }
-/* footer */
-.dev {
-   color: #f1f1f1;
-   font-size: 15px;
-}
- /* Fixed sidenav, full height */
-.sidenav {
-   height: 100%;
-   width: 200px;
-   position: fixed;
-   z-index: 1;
-   top: 0;
-   left: 0;
-   background-color: #111;
-   overflow-x: hidden;
-   padding-top: 20px;
-  }
-  
-  /* Style the sidenav links and the dropdown button */
-  .sidenav a, .dropdown-btn {
-   padding: 6px 8px 6px 16px;
-   text-decoration: none;
-   font-size: 20px;
-   color: #818181;
-   display: block;
-   border: none;
-   background: none;
-   width:100%;
-   text-align: left;
-   cursor: pointer;
-   outline: none;
-  }
-  
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-   color: #f1f1f1;
-  }
-  
-  /* Main content */
-  .main {
-   margin-left: 200px; /* Same as the width of the sidenav */
-   font-size: 20px; /* Increased text to enable scrolling */
-   padding: 0px 10px;
-  }
 
-  
+  /*game html cards  */
 .card-deck{
    position: absolute;
-   top: 0;
+   top: 8;
    left: 0;
    padding: 1rem 2rem;
 }
 
 
-body{
-   background-color: black;
-   color: grey;
-}
-
-.card-body{
-   background-color: black;
-   color: grey;
-}
-
-.card img{
-background-size:cover;
-}
-
-.card-title{
-   font-weight: bolder;
+.card-body,
+.card-title,
+.card Img{
+   background-color: rgba(0, 0, 0, 0.966);
+   color: #f1f1f1;
+   text-align: center;
    font-size: 1.75rem;
+   background-size: cover;
+  
 }
+
+/* .card img{
+background-size:cover;
+} */
+
+/* footer */
+.footer {
+   position: absolute;
+   color: #f1f1f1;
+   text-align: center;
+   font-size: 10px;
+   bottom: 0px;
+   width: 100%;
+}
+ 
