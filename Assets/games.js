@@ -42,6 +42,8 @@ $(document).ready(function(){
                 var listEl = $("<li>").text(genreEl);
                 gameGenreList.append(listEl);
             }
+            response.results.splice(randomIndex, 1);
+            console.log(response.results);
         }
     });
 });
