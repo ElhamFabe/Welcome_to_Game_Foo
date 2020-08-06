@@ -26,7 +26,7 @@ $(document).ready(function () {
             if(response.name != null){
                 var nameEl = response.name;
                 console.log(nameEl);
-                var titleH = $("<h3>").text("Name: " + nameEl);
+                var titleH = $("<h3>").text(nameEl);
                 $("#game-section").append(titleH);
             }
 
@@ -71,32 +71,32 @@ $(document).ready(function () {
                 $("#game-section").append(metacriticP);
             }
             
-            if(response.developers != null){
-                var genreList = $("<ul>").text("Developer(s):");
-                $("#game-section").append(genreList); 
-                for(var i = 0; i < response.developers.length; i++){    
-                    var developerEl = response.developers[i].name;
-                    var listEl = $("<li>").text(developerEl);
-                    $("#game-section").append(listEl);
-                }
-            }
+            // if(response.developers != null){
+            //     var genreList = $("<ul>").text("Developer(s):");
+            //     $("#game-section").append(genreList); 
+            //     for(var i = 0; i < response.developers.length; i++){    
+            //         var developerEl = response.developers[i].name;
+            //         var listEl = $("<li>").text(developerEl);
+            //         $("#game-section").append(listEl);
+            //     }
+            // }
             
-            if(response.developers != null){
-                var genreList = $("<ul>").text("Publisher(s):");
-                $("#game-section").append(genreList); 
-                for(var i = 0; i < response.publisher.length; i++){    
-                    var publishererEl = response.publishers[i].name;
-                    var listEl = $("<li>").text(publisherEl);
-                    $("#game-section").append(listEl);
-                }
-            }
+            // if(response.publishers != null){
+            //     var genreList = $("<ul>").text("Publisher(s):");
+            //     $("#game-section").append(genreList); 
+            //     for(var i = 0; i < response.publisher.length; i++){    
+            //         var publishererEl = response.publishers[i].name;
+            //         var listEl = $("<li>").text(publisherEl);
+            //         $("#game-section").append(listEl);
+            //     }
+            // }
             
-            if(response.release != null){
-                var releaseEl = response.released;
-                console.log(releaseEl);
-                var releaseP = $("<p>").text("Release Date: " + releaseEl);
-                $("#game-section").append(releaseP);
-            }
+            // if(response.release != null){
+            //     var releaseEl = response.released;
+            //     console.log(releaseEl);
+            //     var releaseP = $("<p>").text("Release Date: " + releaseEl);
+            //     $("#game-section").append(releaseP);
+            // }
             
             if(response.website != null){
                 var websiteEl = response.website;
