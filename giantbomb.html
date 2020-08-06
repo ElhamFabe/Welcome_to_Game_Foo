@@ -21,12 +21,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         var apiKey = "9add677be2f47beebb6e7c0925d0d0af08bd9059";
-        var queryURL = "https://www.giantbomb.com/api/themes/?api_key=" + apiKey + "&format=json" + "&limit=10";
+        var queryURL = "https://www.giantbomb.com/api/videos/?api_key=" + apiKey + "&format=json";
+        //"&limit=10" to add limit to results
         $.ajax({
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response.results);
+            console.log(response.results.embed_player);
+            randomIndex = Math.floor(Math.random() * response.results.length)
+            for(var i = 0; i < 3; i++){
+                videoTag = $("<iframe>").attr("src", response.results[randomIndex].embed_player);
+                $("#mainDiv").append(videoTag);
+                response.results.splice(randomIndex, 1)
+            }
         });
     </script>
 </body>
