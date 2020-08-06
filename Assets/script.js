@@ -26,7 +26,7 @@ $(document).ready(function () {
             if(response.name != null){
                 var nameEl = response.name;
                 console.log(nameEl);
-                var titleH = $("<h3>").text("Name: " + nameEl);
+                var titleH = $("<h3>").text(nameEl);
                 $("#game-section").append(titleH);
             }
 
@@ -45,54 +45,58 @@ $(document).ready(function () {
                 $("#game-section").append(ratingP);
             }
 
+            if(response.genres != null){
+                var genreList = $("<ul>").text("Genre(s):");
+                $("#game-section").append(genreList);
+                for(var i = 0; i < response.genres.length; i++){
+                    var genreEl = response.genres[i].name;
+                    var listEl = $("<li>").text(genreEl);
+                    $("#game-section").append(listEl);
+                }
+            }
+
             if(response.description != null){
+                var lineBreak = $("<br>");
+                $("#game-section").append(lineBreak);
                 var descriptionEl = response.description_raw;   
                 console.log(descriptionEl);
                 var descriptionP = $("<p>").text("Description: " + descriptionEl)
                 $("#game-section").append(descriptionP);
             }
-           
-            //need to work with array for multiple genres
-            // var genreEl = [];
-            // if(response.genres != null){
-            //     for(var i = 0; i < response.genres.length; i++){
-            //         genreEl[i] = response.genres[i].name;
-            //         console.log(genreEl[i]);
-            //     }
-            // }
-            
 
             if(response.metacritic != null){
                 var metacriticEl = response.metacritic;
                 console.log(metacriticEl);
-                var metacriticP = $("<p>").text("Rating: " + metacriticEl);
+                var metacriticP = $("<p>").text("Metacritic: " + metacriticEl);
                 $("#game-section").append(metacriticP);
             }
             
-            //need to work with array for developers
-            // var developerEl = [];
-            // if(response.developers != null){ 
+            // if(response.developers != null){
+            //     var genreList = $("<ul>").text("Developer(s):");
+            //     $("#game-section").append(genreList); 
             //     for(var i = 0; i < response.developers.length; i++){    
-            //         developerEl[i] = response.developers[i].name;
-            //         console.log(developerEl[i]);
+            //         var developerEl = response.developers[i].name;
+            //         var listEl = $("<li>").text(developerEl);
+            //         $("#game-section").append(listEl);
             //     }
             // }
             
-            //need to work with array for publishers
-            // var publisherEl = [];
             // if(response.publishers != null){
-            //     for(var i = 0; i < response.publishers.length; i++){ 
-            //         publisherEl[i] = response.publishers[i].name;
-            //         console.log(publisherEl[i]);
+            //     var genreList = $("<ul>").text("Publisher(s):");
+            //     $("#game-section").append(genreList); 
+            //     for(var i = 0; i < response.publisher.length; i++){    
+            //         var publishererEl = response.publishers[i].name;
+            //         var listEl = $("<li>").text(publisherEl);
+            //         $("#game-section").append(listEl);
             //     }
             // }
             
-            if(response.release != null){
-                var releaseEl = response.released;
-                console.log(releaseEl);
-                var releaseP = $("<p>").text("Release Date: " + releaseEl);
-                $("#game-section").append(releaseP);
-            }
+            // if(response.release != null){
+            //     var releaseEl = response.released;
+            //     console.log(releaseEl);
+            //     var releaseP = $("<p>").text("Release Date: " + releaseEl);
+            //     $("#game-section").append(releaseP);
+            // }
             
             if(response.website != null){
                 var websiteEl = response.website;
