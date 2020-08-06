@@ -68,7 +68,8 @@
    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
 }
 
-.main-title{
+.main-title
+{
    position: absolute;
    margin: 0;
    padding: 0;
@@ -79,6 +80,7 @@
    -webkit-transform: translate3d(-50%,-50%,0);
    transform: translate(-50%,-50%,0);
 }
+
 
 .demo .main-title{
    text-transform: uppercase;
@@ -105,8 +107,12 @@
 /* developer cards */
 .devGroup {
    text-align: center;
-   margin-right: 100px;
-   
+   width: 100;
+}
+.devRow
+{
+   margin-top: 500px;
+   background-color: transparent;
 }
 /* footer */
 .dev {
