@@ -187,7 +187,7 @@
                     var ratingP = $("<p>").text("Metacritic: " + ratingEl);
                     $("#card-" + i).append(ratingP);
                 }
-                var gameGenreList = $("<ul>").text("Genres:");
+                var gameGenreList = $("<ul>").text("Genre(s):");
                 $("#card-" + i).append(gameGenreList);
                 for(var j = 0; j < response.results[randomIndex].genres.length; j++){
                         var genreEl = response.results[randomIndex].genres[j].name;
