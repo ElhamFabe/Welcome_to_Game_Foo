@@ -52,31 +52,31 @@ $(document).ready(function () {
                 $("#game-section").append(descriptionP);
             }
            
-            //need to work with array for multiple genres
-            // var genreEl = [];
-            // if(response.genres != null){
-            //     for(var i = 0; i < response.genres.length; i++){
-            //         genreEl[i] = response.genres[i].name;
-            //         console.log(genreEl[i]);
-            //     }
-            // }
+            if(response.genres != null){
+                var genreList = $("<ul>").text("Genres:");
+                $("#game-section").append(genreList);
+                for(var i = 0; i < response.genres.length; i++){
+                    var genreEl = response.genres[i].name;
+                    var listEl = $("<li>").text(genreEl);
+                    $("#game-section").append(listEl);
+                }
+            }
             
 
             if(response.metacritic != null){
                 var metacriticEl = response.metacritic;
                 console.log(metacriticEl);
-                var metacriticP = $("<p>").text("Rating: " + metacriticEl);
+                var metacriticP = $("<p>").text("Metacritic: " + metacriticEl);
                 $("#game-section").append(metacriticP);
             }
             
-            //need to work with array for developers
-            // var developerEl = [];
-            // if(response.developers != null){ 
-            //     for(var i = 0; i < response.developers.length; i++){    
-            //         developerEl[i] = response.developers[i].name;
-            //         console.log(developerEl[i]);
-            //     }
-            // }
+            if(response.developers != null){ 
+                for(var i = 0; i < response.developers.length; i++){    
+                    var developerEl = response.genres[i].name;
+                    var listEl = $("<li>").text(genreEl);
+                    $("#game-section").append(listEl);
+                }
+            }
             
             //need to work with array for publishers
             // var publisherEl = [];
