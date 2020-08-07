@@ -15,7 +15,7 @@
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   <!--local CSS script  -->
   <link rel="stylesheet" href="Assets/style.css">
-  <title>Game App</title>
+  <title>Home | Game Foo Gaming Database</title>
 </head>
 
 <body>
@@ -86,7 +86,8 @@
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1>
         <!-- searching for games -->
-        <section class="row indexRow align-items-start">
+      <div class="container" style="position: absolute; top: 50rem; left: 50rem;">
+        <section class="row align-items-start">
           <article class="col-md-10">
             <div class="card">
               <div class="card-header search">
@@ -96,6 +97,7 @@
               </div>
               <div class="cardbody search">
                 <!-- creating form for the user to search -->
+                
                 <div class="form-group">
                   <label for="game-input">Game:</label>
                   <input type="text" class="form-control" id="game-input">
@@ -123,11 +125,12 @@
             </div>
           </article>
         </section>
+      </div>
         <!-- Footer -->
-        <footer class="footer">
+        <footer>
           <div class="col-sm-12">
             <hr>
-            <h2 class="text-center dev">
+            <h2 class="text-center">
               Powered by your favorite Game-Foo dev's
               <i class=" fa fa-bolt">
               </i>

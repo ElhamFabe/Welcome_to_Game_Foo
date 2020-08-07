@@ -1,4 +1,8 @@
 body{
+   position: relative;
+   margin: 0;
+   padding: 0;
+   overflow: auto;
    background-color: black;
    color: f1f1f1;
 }
@@ -18,7 +22,9 @@ body{
 .demo .large-header{
    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
 }
-
+#main-title {
+   top: 20rem;
+}
 .main-title
 {
    position: absolute;
@@ -26,17 +32,17 @@ body{
    padding: 0;
    color: #f9f1e9;
    text-align: center;
-   top:10%;
+   tOP: 50%;
    left: 50%;
    -webkit-transform: translate3d(-50%,-50%,0);
    transform: translate(-50%,-50%,0);
 }
 
-#demo-canvas {
+/* #demo-canvas {
    position: absolute;
    top: 0;
    left: 0;
-}
+} */
 
 .demo .main-title{
    text-transform: uppercase;
@@ -115,7 +121,7 @@ body{
 /* index row */
 .indexRow {
    position: absolute;
-   top: 500px;
+   top: 20rem;
    left: 50rem;
    
 }
@@ -138,6 +144,8 @@ body{
    top: 500px;
    left: 300rem;
 }
+
+
 /* game html cards */
 .rowGame 
 {
@@ -161,17 +169,16 @@ body{
 }
 
 /* youtube html */
-#form,
-#videos {
-   position: absolute;
-   top: 20rem;
-   left: 70rem;
-   }
-
+/* search bar */
+#form{
+   position: relative;
+   top: 15rem;
+   left: 10rem;
+}
 .videoRow {
    position: absolute;
-   top: -1rem;
-   left: 1rem;
+   top: 25rem;
+   left: 50rem;
 }
   /* cards  */
 .card-deck{
@@ -200,12 +207,13 @@ background-size:cover;
 
 /* footer */
 .footer {
-   position: absolute;
+   position: relative;
    color: #f1f1f1;
    text-align: center;
    font-size: 10px;
    bottom: 0;
    width: 100%;
+ flex-shrink: 0;
 }
  
 header {
