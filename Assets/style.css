@@ -113,13 +113,14 @@ body{
    text-align: center;
 }
 /* index row */
-.gameRow {
-   margin-top: 400px;
+.indexRow {
+   position: absolute;
+   top: 500px;
+   left: 50rem;
+   
+
 }
-.lookyHere{
-   top: 100rem;
-  
-}
+
 /* game html  */
 #form{
    position: absolute;
@@ -137,11 +138,12 @@ body{
    left: 50rem;
 
 }
+/* game html cards */
 .rowGame 
 {
    position: absolute;
-   top: 6rem;
-   left: -1rem;
+   top: 11rem;
+   left: 13rem;
    justify-content: center;
    width: 100rem;
  
