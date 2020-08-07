@@ -8,7 +8,7 @@ body{
 }
 /* background space animation */
 .large-header{
-   position: absolute;
+   position: relative;
    width: 100%;
    height: 100%;
    background: #111;
@@ -170,15 +170,14 @@ body{
 
 /* youtube html */
 /* search bar */
-#form{
-   position: relative;
-   top: 15rem;
-   left: 10rem;
+.form-group{
+   position: static;
 }
+
 .videoRow {
    position: absolute;
-   top: 25rem;
-   left: 50rem;
+   top: 45rem;
+   left: 35rem;
 }
   /* cards  */
 .card-deck{

@@ -19,66 +19,66 @@
 </head>
 
 <body>
-  <nav class="hambuger">
+  <nav>
     <ul class="sidenav">
-        <br>
-        <br>
-        <li>
-            <!-- index html linked to icon -->
-            <a href="index.html"><img src="Assets/images/home.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="House Icon"><strong>Home</strong></a>
-        </li>
-        <br>
-        <hr>
-        <br>
-        <!-- platform html linked to icon-->
-        <li>
-            <a href="platforms.html"><img src="Assets/images/plug.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="Plug Icon"><strong> Platforms</strong></a>
-        </li>
-        <!-- xbox html linked to Icon -->
-        <li>
+      <br>
+      <br>
+      <li>
+        <!-- index html linked to icon -->
+        <a href="index.html"><img src="Assets/images/home.png" width="50" height="30" class="d-inline-block align-top"
+            alt="House Icon"><strong>Home</strong></a>
+      </li>
+      <br>
+      <hr>
+      <br>
+      <!-- platform html linked to icon-->
+      <li>
+        <a href="platforms.html"><img src="Assets/images/plug.png" width="50" height="30"
+            class="d-inline-block align-top" alt="Plug Icon"><strong> Platforms</strong></a>
+      </li>
+      <!-- xbox html linked to Icon -->
+      <li>
 
-            <a href="xbox.html"><img src="Assets/images/xbox.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="Xbox Icon">Xbox</a>
-        </li>
-        <!-- playstation linked to Icon -->
+        <a href="xbox.html"><img src="Assets/images/xbox.png" width="50" height="30" class="d-inline-block align-top"
+            alt="Xbox Icon">Xbox</a>
+      </li>
+      <!-- playstation linked to Icon -->
 
-        <li>
-            <a href="playstation.html"><img src="Assets/images/ps4.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="Playstation Icon">Playstation</a>
-        </li>
-        <!-- nintendo html linked to Icon -->
-        <li> <a href="nintendo.html"><img src="Assets/images/nintendo.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="Nintendo Icon">Nintendo</a>
-        </li>
-        <br>
-        <hr>
-        <br>
-        <!-- games html linked to icon -->
-        <li>
-            <a href="games.html"><img src="Assets/images/controller.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="Controller Icon"><strong> Games</strong></a>
-        </li>
-        <br>
-        <hr>
-        <br>
-        <!-- developers html linked to Icon -->
-        <li>
-            <a href="developer.html"><img src="Assets/images/dev.png" width="50" height="30"
-                    class="d-inline-block align-top" alt="PC Icon"><strong>Developers</strong></a>
-        </li>
-        <br>
-        <hr>
-        <br>
-        <!-- youtube html linked to Icon -->
-        <li>
-            <a href="youtube.html"><img src="Assets/images/youtube.png" width="30" height="30"
-                    class="d-inline-block align-top" alt="Youtube Icon"><strong>Youtube</strong></a>
-        </li>
+      <li>
+        <a href="playstation.html"><img src="Assets/images/ps4.png" width="50" height="30"
+            class="d-inline-block align-top" alt="Playstation Icon">Playstation</a>
+      </li>
+      <!-- nintendo html linked to Icon -->
+      <li> <a href="nintendo.html"><img src="Assets/images/nintendo.png" width="50" height="30"
+            class="d-inline-block align-top" alt="Nintendo Icon">Nintendo</a>
+      </li>
+      <br>
+      <hr>
+      <br>
+      <!-- games html linked to icon -->
+      <li>
+        <a href="games.html"><img src="Assets/images/controller.png" width="50" height="30"
+            class="d-inline-block align-top" alt="Controller Icon"><strong> Games</strong></a>
+      </li>
+      <br>
+      <hr>
+      <br>
+      <!-- developers html linked to Icon -->
+      <li>
+        <a href="developer.html"><img src="Assets/images/dev.png" width="50" height="30"
+            class="d-inline-block align-top" alt="PC Icon"><strong>Developers</strong></a>
+      </li>
+      <br>
+      <hr>
+      <br>
+      <!-- youtube html linked to Icon -->
+      <li>
+        <a href="youtube.html"><img src="Assets/images/youtube.png" width="30" height="30"
+            class="d-inline-block align-top" alt="Youtube Icon"><strong>Youtube</strong></a>
+      </li>
 
     </ul>
-</nav>
+  </nav>
   <!-- <main container  -->
   <main class="container-fluid demo">
     <section class="content">
@@ -86,46 +86,46 @@
         <canvas id="demo-canvas"></canvas>
         <h1 class="main-title"><span class="thin">Welcome to </span> Game Foo </h1>
         <!-- searching for games -->
-      <div class="container" style="position: absolute; top: 50rem; left: 50rem;">
-        <section class="row align-items-start">
-          <article class="col-md-10">
-            <div class="card">
-              <div class="card-header search">
-                <strong>
-                  <i class="fas fa-dice-d6"></i> Search till your hearts content
-                </strong>
-              </div>
-              <div class="cardbody search">
-                <!-- creating form for the user to search -->
-                
-                <div class="form-group">
-                  <label for="game-input">Game:</label>
-                  <input type="text" class="form-control" id="game-input">
+        <div class="container">
+          <section class="row align-items-start">
+            <article class="col-md-10">
+              <div class="card">
+                <div class="card-header search">
+                  <strong>
+                    <i class="fas fa-dice-d6"></i> Search till your hearts content
+                  </strong>
+                </div>
+                <div class="cardbody search">
+                  <!-- creating form for the user to search -->
+
+                  <div class="form-group">
+                    <label for="game-input">Game:</label>
+                    <input type="text" class="form-control" id="game-input">
+
+                  </div>
+                  <button type="submit" class="hollow button warning" id="find-game">
+                    <strong><i class="fas fa-glasses"></i> Search</strong>
+                  </button>
+                  <button class="hollow button warning" id="clear-search">
+                    <strong><i class="fas fa-broom"></i> Start Over </strong>
+                  </button>
 
                 </div>
-                <button type="submit" class="hollow button warning" id="find-game">
-                  <strong><i class="fas fa-glasses"></i> Search</strong>
-                </button>
-                <button class="hollow button warning" id="clear-search">
-                  <strong><i class="fas fa-broom"></i> Start Over </strong>
-                </button>
-
               </div>
-            </div>
-          </article>
-          <!-- all retrieved game search -->
-          <article class="col-md-10">
-            <div class="card">
-              <div class="card-header">
-                <i class="fas fa-search-dollar"></i><strong> Looky Here</strong>
+            </article>
+            <!-- all retrieved game search -->
+            <article class="col-md-10">
+              <div class="card">
+                <div class="card-header">
+                  <i class="fas fa-search-dollar"></i><strong> Looky Here</strong>
+                </div>
+                <!-- All games will go here -->
+                <div class="card-body" id="game-section">
+                </div>
               </div>
-              <!-- All games will go here -->
-              <div class="card-body" id="game-section">
-              </div>
-            </div>
-          </article>
-        </section>
-      </div>
+            </article>
+          </section>
+        </div>
         <!-- Footer -->
         <footer>
           <div class="col-sm-12">
