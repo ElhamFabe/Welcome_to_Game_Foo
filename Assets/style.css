@@ -194,4 +194,7 @@ background-size:cover;
    width: 100%;
 }
  
-
+header {
+   font-size: large;
+   text-align: center;
+}
