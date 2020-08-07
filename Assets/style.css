@@ -2,58 +2,6 @@ body{
    background-color: black;
    color: f1f1f1;
 }
-
-/* The sidebar menu *//* Fixed sidenav, full height */
-.sidenav {
-   height: 100%;
-   width: 10vw;
-   position: fixed;
-   z-index: 1;
-   top: 0;
-   left: 0;
-   background-color: #111;
-   overflow-x: hidden;
-   padding-top: 20px;
-   transition: ease-in;
-  }
-  
-  /* Style the sidenav links and the dropdown button */
-  .sidenav a, .dropdown-btn {
-   padding: 6px 8px 6px 16px;
-   text-decoration: none;
-   font-size: 20px;
-   color: #818181;
-   display: block;
-   border: none;
-   background: none;
-   width:100%;
-   text-align: left;
-   cursor: pointer;
-   outline: none;
-  }
-  
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-   color: #f1f1f1;
-  }
-
-
- /* Style page content */
- .main {
-   margin-left: 160px; /* Same as the width of the sidebar */
-   padding: 0px 10px;
- }
- 
- /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
- @media screen and (max-height: 450px) {
-   .sidenav {padding-top: 15px;}
-   .sidenav a {font-size: 18px;}
- }
- /* button search nav & search card  */
- .btn-group button {
-   cursor: pointer; /* Pointer/hand icon */
-   float: left; /* Float the buttons side by side */
- }
 /* background space animation */
 .large-header{
    position: absolute;
@@ -106,6 +54,58 @@ body{
    }
 }
 /* end of background animation */
+/* The sidebar menu *//* Fixed sidenav, full height */
+.sidenav {
+   height: 100%;
+   width: 10vw;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111;
+   overflow-x: hidden;
+   padding-top: 20px;
+   transition: ease-in;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-size: 20px;
+   color: #818181;
+   display: block;
+   border: none;
+   background: none;
+   width:100%;
+   text-align: left;
+   cursor: pointer;
+   outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+   color: #f1f1f1;
+  }
+
+
+ /* Style page content */
+ .main {
+   margin-left: 160px; /* Same as the width of the sidebar */
+   padding: 0px 10px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+ /* button search nav & search card  */
+ .btn-group button {
+   cursor: pointer; /* Pointer/hand icon */
+   float: left; /* Float the buttons side by side */
+ }
+
 
 /* search card */
 .search
@@ -125,11 +125,7 @@ body{
    position: absolute;
    top: 10rem;
 } 
-#videos {
-   position: absolute;
-   top: 6rem;
-   left: 42rem;
-}
+
 .form-group6
 {
    position: absolute;
@@ -137,9 +133,15 @@ body{
    left: 50rem;
 
 }
+#exampleModal8 {
+   position: absolute;
+   top: 500px;
+   left: 300rem;
+}
 /* game html cards */
 .rowGame 
 {
+
    position: absolute;
    top: 11rem;
    left: 13rem;
@@ -159,6 +161,12 @@ body{
 }
 
 /* youtube html */
+#form,
+#videos {
+   position: absolute;
+   top: 20rem;
+   left: 70rem;
+   }
 
 .videoRow {
    position: absolute;
