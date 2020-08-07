@@ -117,6 +117,7 @@ body{
    position: absolute;
    top: 500px;
    left: 50rem;
+   
 
 }
 
@@ -137,11 +138,12 @@ body{
    left: 50rem;
 
 }
+/* game html cards */
 .rowGame 
 {
    position: absolute;
-   top: 6rem;
-   left: -1rem;
+   top: 11rem;
+   left: 13rem;
    justify-content: center;
    width: 100rem;
  
