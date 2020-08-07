@@ -20,7 +20,7 @@
 
 <body>
     <main class="container-fluid">
-        <nav class="hambuger">
+        <nav>
             <ul class="sidenav">
                 <br>
                 <br>
@@ -86,31 +86,31 @@
             <div class="content">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
-                    <h1 class="main-title" style="position:absolute; top:200px;">Youtube</h1>
-                    <section class="row justify-content-md-center">
-                        <article class="col-md-6">
-                            <form id="form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control " id="searchInfo">
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" id="submitBtn" class="button warning">
-                                </div>
-                            </form>
-                        </article>
-                    </section>
-                    <section class="row videoRow">
-                        <div class="column large-6">
-                            <div id="videos">
-                                <article>
-                                    <h2 class="descriptionTitle-1 titleYouTube"></h2>
-                                    <iframe class="embed-1" width="1215" height="480"
-                                        src="https://www.youtube.com/embed/QW28YKqdxe0" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <h4 class="description-1"></h4>
-                                </article>
-                                <!-- <br>
+                    <h1 class="main-title">Youtube</h1>
+                    <div class="container">
+                        <section class="row justify-content-md-center">
+                            <article class="col-md-6">
+                                <form id="form">
+                                    <div class="form-group">
+                                        <label for="searchInfo" style="color: white; font-size: larger;">Search Gaming Video</label>
+                                        <input type="text" class="form-control " id="searchInfo">
+                                        <input type="submit" id="submitBtn" class="button warning">
+                                    </div>
+                                </form>
+                            </article>
+                        </section>
+                        <section class="row videoRow">
+                            <div class="column large-6">
+                                <div id="videos">
+                                    <article>
+                                        <h2 class="descriptionTitle-1 titleYouTube"></h2>
+                                        <iframe class="embed-1" width="1215" height="480"
+                                            src="https://www.youtube.com/embed/QW28YKqdxe0" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                        <h4 class="description-1"></h4>
+                                    </article>
+                                    <!-- <br>
                                 <br>
                                 <article class="col-md-8 ">
                                     <h2 class="descriptionTitle-2 titleYouTube"></h2>
@@ -130,13 +130,13 @@
                                         allowfullscreen></iframe>
                                     <h4 class="description-3"></h4>
                                 </article> -->
+                                </div>
                             </div>
+                        </section>
 
-                        </div>
-                    </section>
-
+                    </div>
                     <!-- Footer -->
-                    <footer class="footer fixed-bottom">
+                    <!-- <footer class="footer fixed-bottom">
                         <hr>
                         <h4>
                             Powered by your favorite Game-Foo dev's
@@ -144,7 +144,7 @@
                             </i>
                         </h4>
 
-                    </footer>
+                    </footer> -->
                 </div>
 
 
@@ -169,7 +169,7 @@
     <!-- script for local background animation js -->
     <script src="Assets/animation.js"></script>
     <!-- javascript -->
-    <!-- <script src="Assets/youtube.js"></script> -->
+    <script src="Assets/youtube.js"></script>
 
 
 </body>
