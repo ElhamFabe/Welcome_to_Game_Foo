@@ -1,111 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+    <meta name="Game Foo" content="Gaming Database" />
+    <!-- bootstrap  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- awesome fonts  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Title</title>
+    <!-- foundation by zurb -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <!--local CSS script  -->
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Youtube | Game Foo Gaming Database</title>
 </head>
 
 <body>
-    <nav class="sidenav">
-        <br>
-        <br>
-        <a href="index.html"><img src="Assets/images/home.png" width="30" height="30" class="d-inline-block align-top"
-            alt="House Icon"><strong>Home</strong></a>
-        <br>
-        <hr>
-        <br>
-        <!-- platform -->
-        <a href="platforms.html"><img src="Assets/images/plug.png" width="30" height="30" class="d-inline-block align-top"
-            alt="Plarform Icon"><strong> Platforms</strong></a>
-    
-        <a href="xbox.html"><img src="Assets/images/xbox.png" width="30" height="30" class="d-inline-block align-top"
-            alt="Xbox Icon">Xbox</a>
-        <a href="playstation.html"><img src="Assets/images/ps4.png" width="30" height="30" class="d-inline-block align-top"
-            alt="Playstation Icon">Playstation</a>
-        <a href="nintendo.html"><img src="Assets/images/nintendo.png" width="30" height="30"
-            class="d-inline-block align-top" alt="Nintendo Icon">Nintendo</a>
-        <br>
-        <hr>
-        <br>
-        <!-- <a href="#"><img src="Assets/images/pc.png" width="30" height="30" class="d-inline-block align-top" alt="PC Icon">
-          PC</a> -->
-        <!-- </div> -->
-        <!-- games icon -->
-        <a href="games.html"><img src="Assets/images/controller.png" width="30" height="30" class="d-inline-block align-top"
-            alt="Controller Icon"><strong> Games</strong></a>
-        <br>
-        <hr>
-        <br>
-        <a href="developer.html"><img src="Assets/images/dev.png" width="30" height="30" class="d-inline-block align-top"
-            alt="PC Icon"><strong>Developers</strong></a>
-          <br>
-          <hr>
-          <br>
-        <a href="youtube.html"><img src="Assets/images/youtube.png" width="30" height="30" class="d-inline-block align-top"
-              alt="Youtube Icon"><strong>Youtube</strong></a>
-      </nav>
-    <div class="container">
-        <h1>Trial for youtube api</h1>
-        <br>
-        <br>
-        <form id="form">
-            <div class="form-group">
-                <input type="text" class="form-control " id="searchInfo">
-            </div>
-            <div class="form-group">
-                <input type="submit" id="submitBtn" class="btn btn-danger">
-            </div>
-        </form>
-        <div class="row">
-            <div class="col-md-10">
-                <div id="videos">
+    <main class="container-fluid">
+        <nav class="hambuger">
+            <ul class="sidenav">
+                <br>
+                <br>
+                <li>
+                    <!-- index html linked to icon -->
+                    <a href="index.html"><img src="Assets/images/home.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="House Icon"><strong>Home</strong></a>
+                </li>
+                <br>
+                <hr>
+                <br>
+                <!-- platform html linked to icon-->
+                <li>
+                    <a href="platforms.html"><img src="Assets/images/plug.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="Plug Icon"><strong> Platforms</strong></a>
+                </li>
+                <!-- xbox html linked to Icon -->
+                <li>
 
+                    <a href="xbox.html"><img src="Assets/images/xbox.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="Xbox Icon">Xbox</a>
+                </li>
+                <!-- playstation linked to Icon -->
 
-                    <div class="col-md-8 offset-3">
-                        <h2 class="descriptionTitle-1 titleYouTube"></h2>
-                        <iframe class="embed-1" width="425" height="240" src="https://www.youtube.com/embed/QW28YKqdxe0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <h4 class="description-1"></h4>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-md-8 offset-3">
-                        <h2 class="descriptionTitle-2 titleYouTube"></h2>
-                        <iframe class="embed-2" width="425" height="240" src="https://www.youtube.com/embed/QW28YKqdxe0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <h4 class="description-2"></h4>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-md-8 offset-3">
-                        <h2 class="descriptionTitle-3 titleYouTube"></h2>
-                        <iframe class="embed-3" width="425" height="240" src="https://www.youtube.com/embed/QW28YKqdxe0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <h4 class="description-3"></h4>
-                    </div>
+                <li>
+                    <a href="playstation.html"><img src="Assets/images/ps4.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="Playstation Icon">Playstation</a>
+                </li>
+                <!-- nintendo html linked to Icon -->
+                <li> <a href="nintendo.html"><img src="Assets/images/nintendo.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="Nintendo Icon">Nintendo</a>
+                </li>
+                <br>
+                <hr>
+                <br>
+                <!-- games html linked to icon -->
+                <li>
+                    <a href="games.html"><img src="Assets/images/controller.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="Controller Icon"><strong> Games</strong></a>
+                </li>
+                <br>
+                <hr>
+                <br>
+                <!-- developers html linked to Icon -->
+                <li>
+                    <a href="developer.html"><img src="Assets/images/dev.png" width="50" height="30"
+                            class="d-inline-block align-top" alt="PC Icon"><strong>Developers</strong></a>
+                </li>
+                <br>
+                <hr>
+                <br>
+                <a href="youtube.html"><img src="Assets/images/youtube.png" width="30" height="30"
+                        class="d-inline-block align-top" alt="Youtube Icon"><strong>Youtube</strong></a>
+        </nav>
+        </ul>
+        </nav>
+
+        <!-- <main container  -->
+        <section class="container-fluid demo">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title">Youtube</h1>
+                    <!-- multiple card bodies for games -->
+                    <section class="row">
+                        <article class="col-md-10">
+                            <form id="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control " id="searchInfo">
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" id="submitBtn" class="btn btn-danger">
+                                </div>
+                            </form>
+                        </article>
+                    </section>
+
+                    <section class="row videoRow">
+                        <div class="col-md-10">
+                            <div id="videos">
+                                <!-- <article class="col-md-8 "> -->
+                                    <h2 class="descriptionTitle-1 titleYouTube"></h2>
+                                    <iframe class="embed-1" width="425" height="240"
+                                        src="https://www.youtube.com/embed/QW28YKqdxe0" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <h4 class="description-1"></h4>
+                                <!-- </article> -->
+                                <br>
+                                <br>
+                                <!-- <article class="col-md-8 "> -->
+                                    <h2 class="descriptionTitle-2 titleYouTube"></h2>
+                                    <iframe class="embed-2" width="425" height="240"
+                                        src="https://www.youtube.com/embed/QW28YKqdxe0" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <h4 class="description-2"></h4>
+                                <!-- </article> -->
+                                <br>
+                                <br>
+                                <!-- <article class="col-md-8 "> -->
+                                    <h2 class="descriptionTitle-3 titleYouTube"></h2>
+                                    <iframe class="embed-3" width="425" height="240"
+                                        src="https://www.youtube.com/embed/QW28YKqdxe0" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <h4 class="description-3"></h4>
+                                <!-- </article> -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer class="footer fixed-bottom">
+                        <hr>
+                        <h4>
+                            Powered by your favorite Game-Foo dev's
+                            <i class=" fa fa-bolt">
+                            </i>
+                        </h4>
+
+                    </footer>
                 </div>
             </div>
-        </div>
 
-    </div>
-
+        </section>
+    </main>
+    <!--Jquery  -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- ajax Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <!-- ajax bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="Assets/youtube.js"></script>
+    <!-- script for web awesome animation -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <!-- foundation by Zurb -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <!-- script for local background animation js -->
+    <script src="Assets/animation.js"></script>
+    <!-- javascript -->
+    <!-- <script src="Assets/youtube.js"></script> -->
 
 
 </body>
