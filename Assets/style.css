@@ -118,6 +118,7 @@ body{
 }
 .lookyHere{
    top: 100rem;
+  
 }
 /* game html  */
 #form{
@@ -139,10 +140,11 @@ body{
 .rowGame 
 {
    position: absolute;
-   top: 20rem;
+   top: 6rem;
+   left: -1rem;
    justify-content: center;
    width: 100rem;
-   /* height: 100px; */
+ 
 }
 /* developer cards */
 .devGroup {
@@ -155,7 +157,7 @@ body{
    background-color: transparent;
 }
 
-  /*game html cards  */
+  /* cards  */
 .card-deck{
    position: absolute;
    top: 8;
@@ -186,7 +188,7 @@ background-size:cover;
    color: #f1f1f1;
    text-align: center;
    font-size: 10px;
-   bottom: 0px;
+   bottom: 0;
    width: 100%;
 }
  
