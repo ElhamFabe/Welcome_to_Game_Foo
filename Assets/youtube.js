@@ -1,5 +1,5 @@
 
-var youtubeKey = "AIzaSyAV-DlVCJRNKy95-Of12zqhpXpNUiB1Q6o"
+var youtubeKey = "AIzaSyBkMZFvWytktX_8Zu--Tc6xOM9H0em8oT0"
 
 var urlYoutube = "https://www.googleapis.com/youtube/v3/search?part=id&q=tuto&type=video&key=" + youtubeKey
 // Request Function
@@ -11,7 +11,7 @@ function getVideo(searchInfo) {
     data: {
       q: searchInfo,
       part: 'snippet',
-      maxResults: 3,
+      maxResults: 10,
       type: 'video',
       videoEmbeddable: true,
     },
@@ -30,9 +30,9 @@ function embedVideo(data) {
   $('.embed1').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
   $('.embed2').attr('src', 'https://www.youtube.com/embed/' + data.items[1].id.videoId)
   $('.embed3').attr('src', 'https://www.youtube.com/embed/' + data.items[2].id.videoId)
-  $('.descriptionTitle1').text(data.items[0].snippet.title)
-  $('.descriptionTitle2').text(data.items[1].snippet.title)
-  $('.descriptionTitle3').text(data.items[2].snippet.title)
+  // $('.descriptionTitle1').text(data.items[0].snippet.title)
+  // $('.descriptionTitle2').text(data.items[1].snippet.title)
+  // $('.descriptionTitle3').text(data.items[2].snippet.title)
   $('.description1').text(data.items[0].snippet.description)
   $('.description2').text(data.items[1].snippet.description)
   $('.description3').text(data.items[2].snippet.description)
