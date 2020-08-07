@@ -1,4 +1,8 @@
 body{
+   position: relative;
+   margin: 0;
+   padding: 0;
+   overflow: auto;
    background-color: black;
    color: f1f1f1;
 }
@@ -26,17 +30,17 @@ body{
    padding: 0;
    color: #f9f1e9;
    text-align: center;
-   top:10%;
+   tOP: 50%;
    left: 50%;
    -webkit-transform: translate3d(-50%,-50%,0);
    transform: translate(-50%,-50%,0);
 }
 
-#demo-canvas {
+/* #demo-canvas {
    position: absolute;
    top: 0;
    left: 0;
-}
+} */
 
 .demo .main-title{
    text-transform: uppercase;
@@ -115,7 +119,7 @@ body{
 /* index row */
 .indexRow {
    position: absolute;
-   top: 500px;
+   top: 20rem;
    left: 50rem;
    
 }
@@ -199,12 +203,13 @@ background-size:cover;
 
 /* footer */
 .footer {
-   position: absolute;
+   position: relative;
    color: #f1f1f1;
    text-align: center;
    font-size: 10px;
    bottom: 0;
    width: 100%;
+ flex-shrink: 0;
 }
  
 header {
