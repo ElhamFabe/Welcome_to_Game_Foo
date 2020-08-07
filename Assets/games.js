@@ -40,7 +40,7 @@ $(document).ready(function(){
             $("#card-" + i).append(gameGenreList);
             for (var j = 0; j < response.results[randomIndex].genres.length; j++) {
                 var genreEl = response.results[randomIndex].genres[j].name;
-                var listEl = $("<li>").text(genreEl);
+                var listEl = $("<p>").text(genreEl);
                 gameGenreList.append(listEl);
             }
             response.results.splice(randomIndex, 1);
