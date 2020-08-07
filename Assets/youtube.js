@@ -11,14 +11,23 @@ function getVideo(searchInfo) {
     data: {
       q: searchInfo,
       part: 'snippet',
-      maxResults: 10,
+      maxResults: 3,
       type: 'video',
       videoEmbeddable: true,
     },
     success: function (data) {
       console.log("Data: ", data)
-      embedVideo(data)
+      // embedVideo(data)
       // data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+      $('.embed1').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
+      $('.embed2').attr('src', 'https://www.youtube.com/embed/' + data.items[1].id.videoId)
+      $('.embed3').attr('src', 'https://www.youtube.com/embed/' + data.items[2].id.videoId)
+      $('.descriptionTitle1').text(data.items[0].snippet.title)
+      $('.descriptionTitle2').text(data.items[1].snippet.title)
+      $('.descriptionTitle3').text(data.items[2].snippet.title)
+      $('.description1').text(data.items[0].snippet.description)
+      $('.description2').text(data.items[1].snippet.description)
+      $('.description3').text(data.items[2].snippet.description)
     },
     error: function (response) {
       console.log("Request Failed");
@@ -26,17 +35,17 @@ function getVideo(searchInfo) {
   });
 }
 // Using the Data Received from our Request
-function embedVideo(data) {
-  $('.embed1').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
-  $('.embed2').attr('src', 'https://www.youtube.com/embed/' + data.items[1].id.videoId)
-  $('.embed3').attr('src', 'https://www.youtube.com/embed/' + data.items[2].id.videoId)
-  // $('.descriptionTitle1').text(data.items[0].snippet.title)
-  // $('.descriptionTitle2').text(data.items[1].snippet.title)
-  // $('.descriptionTitle3').text(data.items[2].snippet.title)
-  $('.description1').text(data.items[0].snippet.description)
-  $('.description2').text(data.items[1].snippet.description)
-  $('.description3').text(data.items[2].snippet.description)
-}
+// function embedVideo(data) {
+//   $('.embed1').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
+//   $('.embed2').attr('src', 'https://www.youtube.com/embed/' + data.items[1].id.videoId)
+//   $('.embed3').attr('src', 'https://www.youtube.com/embed/' + data.items[2].id.videoId)
+//   $('.descriptionTitle1').text(data.items[0].snippet.title)
+//   $('.descriptionTitle2').text(data.items[1].snippet.title)
+//   $('.descriptionTitle3').text(data.items[2].snippet.title)
+//   $('.description1').text(data.items[0].snippet.description)
+//   $('.description2').text(data.items[1].snippet.description)
+//   $('.description3').text(data.items[2].snippet.description)
+// }
 // Call the function to search
 $("#submitBtn").on("click", function (event) {
   event.preventDefault();
