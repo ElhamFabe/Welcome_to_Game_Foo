@@ -22,7 +22,9 @@ body{
 .demo .large-header{
    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
 }
-
+#main-title {
+   top: 20rem;
+}
 .main-title
 {
    position: absolute;
