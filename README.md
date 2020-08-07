@@ -4,7 +4,7 @@ Game Foo is gaming database applicaton inspired by our group’s collective love
 Whether you are a fan Playstation, Xbox or the original Nintendo, this is your one stop-shop when you are plagued with the age old question “So what do I play next?”
 
 ```
-## Created by Elham Tahir Hussain, Frank Buono Jr., Dan Margo and Heather Mancuso.
+## Developers: Elham Tahir Hussain, Frank Buono Jr., Dan Margo and Heather Mancuso.
 ```
 The following languages were used:
 HTML
