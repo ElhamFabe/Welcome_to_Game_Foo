@@ -29,7 +29,7 @@ $(document).ready(function () {
                 var titleH = $("<h3>").text(nameEl);
                 $("#game-section").append(titleH);
             }
-
+            
             if(response.background_image != null){
                 var imgEl = response.background_image;
                 console.log(imgEl);
@@ -112,6 +112,12 @@ $(document).ready(function () {
             //     var platformEl = response.platforms[0].platform.name;
             //     console.log(platformEl);
             // }
+        }).catch(function(error){
+            console.log("ajax return error: ", error);
+            $("#game-section").empty();
+            var errorEl = "Invalid input. Start over and try again";
+            var titleH = $("<h3>").text(errorEl);
+            $("#game-section").append(titleH);
         });
     });
 
