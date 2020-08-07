@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     $.ajax(settings).done(function (response) {
         console.log(response.results);
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 6; i++) {
             randomIndex = Math.floor(Math.random() * response.results.length);
             console.log(randomIndex);
             if (response.results[randomIndex].background_image != null) {
@@ -29,6 +29,7 @@ $(document).ready(function(){
                 var nameEl = response.results[randomIndex].name;
                 var titleP = $("<p>").text(nameEl);
                 $("#card-" + i).append(titleP);
+                console.log(response.results[randomIndex].name);
             }
             if (response.results[randomIndex].metacritic != null) {
                 var ratingEl = response.results[randomIndex].metacritic;
