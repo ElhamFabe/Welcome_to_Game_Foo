@@ -1,22 +1,21 @@
 # Project: Game Foo
 ```
 Game Foo is gaming database applicaton inspired by our group’s collective love of all things video games!
-Whether you are a fan Playstation, Xbox or the original Nintendo, this is your one stop-shop when you are plagued with the age old question “So what do I play next?”
+Whether you are a fan of Playstation, Xbox or Nintendo, this is your one stop-shop when you are plagued with the age old question “So what do I play next?”
 
 ```
-## Developers: Elham Tahir Hussain, Frank Buono Jr., Dan Margo and Heather Mancuso.
+## Developers: Elham Tahir Hussain, Frank Buono, Dan Margo, and Heather Mancuso.
 ```
-The following languages were used:
+The following technologies were used:
 HTML
 CSS
-JQuery
 JavaScript
+JQuery
 AJAX
 
-API's :
+API's:
 RawG
 Youtube
-GaintBomb
 
 Icons & background animation:
 Font Awesome
