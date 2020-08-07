@@ -142,6 +142,8 @@ body{
    top: 500px;
    left: 300rem;
 }
+
+
 /* game html cards */
 .rowGame 
 {
@@ -165,7 +167,7 @@ body{
 }
 
 /* youtube html */
-   /* search bar */
+/* search bar */
 #form{
    position: relative;
    top: 15rem;
