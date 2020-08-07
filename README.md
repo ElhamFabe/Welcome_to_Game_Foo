@@ -22,7 +22,7 @@ Font Awesome
 Awesome Web Animation
 
 Css Framework:
-Foundation by Zurub
+Foundation by Zurb
 Bootstrap
 
 ```
